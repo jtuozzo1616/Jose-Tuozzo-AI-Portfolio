@@ -1,48 +1,53 @@
-# José Tuozzo – Applied AI Portfolio
+# José Tuozzo – Applied AI & Cybersecurity Portfolio
 
 ## About Me
-I am an Applied Artificial Intelligence student at Houston Community College, focusing on computer vision, machine learning, and practical AI applications. This portfolio brings together the main projects I have worked on during my studies and shows how I apply AI to real-world problems.
+I am an Applied Artificial Intelligence student at Houston Community College with hands-on experience in computer vision, machine learning, and AI-related cybersecurity. My work spans practical AI engineering (object detection, regression modeling) and AI security topics such as zero-click vulnerabilities, AI agent threat models, SOC/DFIR workflows, and the NIST AI Risk Management Framework.
 
-I enjoy building hands-on projects where I can go from raw data to a working model, analyze results, and iterate to improve performance.
+This portfolio includes real projects developed during my coursework.
 
 ## Technical Skills
-- Programming: Python (Jupyter Notebook, Google Colab)
-- Machine Learning: supervised learning, regression, classification, model evaluation
-- Deep Learning: basic CNNs for image classification and object detection
-- Computer Vision: OpenCV, image preprocessing, object detection workflows
-- NLP: basic text preprocessing, sentiment analysis
-- Tools & Platforms: GitHub, Google Colab, Jupyter, NumPy, pandas, Matplotlib, scikit-learn, TensorFlow/Keras (where applicable)
+### Artificial Intelligence
+- Python, Jupyter, Google Colab  
+- Machine Learning (Regression, Classification)  
+- Deep Learning (CNNs, Object Detection, YOLO workflow basics)  
+- Computer Vision (OpenCV, bounding boxes, dataset preprocessing)
 
-## Featured Courses & Projects
+### Cybersecurity
+- Zero-click attack vectors & exploitation flow  
+- AI Security: prompt injection, model exfiltration, poisoning, jailbreak risks  
+- Threat modeling for AI agents  
+- SOC / DFIR fundamentals  
+- NIST AI Risk Management Framework (Govern, Map, Measure, Manage)
 
-### Computer Vision (ITAI 1378)
-- [SmartInventoryCounter – Object Detection for Inventory](ComputerVision-ITAI1378/SmartInventoryCounter-ObjectDetection/README.md)  
-  A computer vision project that uses an object detection model to count items in images for inventory support.
+## Featured Projects
 
-### Machine Learning & Data Science
-- [House Prices Regression Model](MachineLearning-Projects/HousePrices-Regression/README.md)  
-  A regression project that predicts house prices using multiple features and compares different models.
+### 🔵 Computer Vision (ITAI 1378)
+- **SmartInventoryCounter (YOLO-style object detection)**  
+  Real AI solution for automated inventory counting.  
+  👉 `ComputerVision-ITAI1378/SmartInventoryCounter/`
 
-### Natural Language Processing (NLP)
-- [Sentiment Analysis of Reviews](NLP-Projects/Sentiment-Analysis/README.md)  
-  A project that classifies text reviews as positive or negative using basic NLP techniques.
+- **Chihuahua vs Muffin – CNN Classifier**  
+- **Pascal VOC Object Detection – TensorFlow**
 
-## How This Portfolio Is Organized
+### 🟢 Machine Learning Projects
+- **House Prices Regression**  
+  Regression comparison: Linear Regression, Decision Trees, Random Forest, Gradient Boosting.
 
-- `ComputerVision-ITAI1378/` – Computer vision course projects  
-- `MachineLearning-Projects/` – Machine learning and regression/classification projects  
-- `NLP-Projects/` – Natural language processing projects  
-- `Presentation/` – Optional portfolio presentation (PDF)
+### 🔐 Cybersecurity & AI
+- **Zero-Click Attacks Explained (Android Stagefright, WhatsApp Pegasus, iMessage exploit)**  
+  Threat flow + defense strategies.
 
-Each course folder contains:
-- A course-level README with a short overview
-- One or more project folders
-- Each project folder has its own README, notebook, and results
+- **AI Security Threat Models**  
+  Prompt injection, data poisoning, model exfiltration, membership inference, agent misalignment.
+
+- **NIST AI Risk Management Framework (AI RMF 1.0)**  
+  Govern / Map / Measure / Manage explained in depth.
+
+- **SOC & DFIR Foundations**  
+  Real workflows: containment, identification, logs, IR triage.
 
 ## Contact
+- Email: [tu email]
+- LinkedIn: [tu LinkedIn]
+- GitHub: https://github.com/Jose-Tuozzo
 
-- Email: **[pon aquí tu email]**
-- LinkedIn: **[pon aquí tu perfil de LinkedIn]**
-- GitHub: [github.com/Jose-Tuozzo](https://github.com/Jose-Tuozzo)
-
-If you would like to review any project in detail, you can start from the main README of each project and open the corresponding Jupyter notebook.
