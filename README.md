@@ -8,18 +8,39 @@ This portfolio highlights the core projects completed throughout my AI coursewor
 
 This portfolio is organized into three main sections:
 
-### 🔵 Computer Vision
-- [Lab 05 – CNN Classifier: Chihuahua vs Muffin](./ComputerVision/Lab05-CNN)
-- [Lab 08 – Visual Language Models (CLIP / BLIP / BLIP-2)](./ComputerVision/Lab08-VLM)
-- [Pascal VOC Object Detection – Transfer Learning](./ComputerVision/ObjectDetection)
+---
 
-### 🟢 Machine Learning
-- [House Prices Regression Model](./MachineLearning/HousePricesRegression)
+### 🔵 Computer Vision — ITAI 1378
+- **Lab 05 – CNN Classifier: Chihuahua vs Muffin**  
+  📄 Notebook:  
+  `./ComputerVision-ITAI1378/Lab05_CNN_Chihuahua_Muffin_...`
+- **Lab 08 – Visual Language Models (CLIP / BLIP / BLIP-2)**  
+  📄 Notebook:  
+  `./ComputerVision-ITAI1378/Lab_08_2025_VLM_Lab_JoseTuozzo.ipynb`
+- **Object Detection – Pascal VOC (Transfer Learning)**  
+  📄 Notebook:  
+  `./ComputerVision-ITAI1378/Lab06_Orig_ITAI_1378_VOC2007__Dataset_JoseTuozzo_Notebook_LAB_Object_Detection_transfer_learning.ipynb`
+
+---
+
+### 🟢 Machine Learning — House Prices Regression
+- **Midterm Regression Model**  
+  📄 Notebook:  
+  `./MachineLearning-Projects/MidTerm_Group3.ipynb`  
+  📑 Full Analysis:  
+  `./MachineLearning-Projects/Midterm_Detailed_Analysis.docx`
+
+---
 
 ### 🛡 Cybersecurity Data Analysis
-- [Pandas 101 – Foundations](./Cybersecurity/Pandas101)
-- [Matplotlib 101 – Visualization Basics](./Cybersecurity/Matplotlib101)
-- [Seaborn 101 – Statistical Visualizations](./Cybersecurity/Seaborn101)
+Foundational data science labs using Pandas, Matplotlib, and Seaborn.
+
+- **Pandas 101 — Data Cleaning & Exploration**  
+  `./Cybersecurity/Jose_Tuozzo_Pandas101(1).py`
+- **Matplotlib 101 — Visualization Basics**  
+  `./Cybersecurity/MatPlotLib_JoseTuozzo.ipynb`
+- **Seaborn 101 — Statistical Visualizations**  
+  `./Cybersecurity/Seaborn_JoseTuozzoIzaguirre.ipynb`
 
 ---
 
