@@ -24,6 +24,23 @@ This machine learning project predicts housing prices using numerical and catego
 ## How to Run
 1. Open the notebook in Google Colab or Jupyter Notebook  
 2. Install required libraries:
-```python
 !pip install scikit-learn pandas numpy matplotlib seaborn
+3. Run all cells in order
+4. Review model metrics and plots
+
+## Results
+
+Compared MAE, MSE, and R² across multiple models
+
+Identified the best-performing regressor using validation data
+
+Visualized prediction errors and feature impacts
+
+##  Key Learnings
+
+Differences between linear and non-linear regression models
+
+How to evaluate and select models based on statistical metrics
+
+Importance of preprocessing for ML performance
 
