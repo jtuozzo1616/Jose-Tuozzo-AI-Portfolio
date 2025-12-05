@@ -1,7 +1,7 @@
 
 ---
 
-### 🛡️ Cybersecurity Data Analysis – Foundations (Pandas, Matplotlib, Seaborn)
+# 🛡️ Cybersecurity Data Analysis – Foundations (Pandas, Matplotlib, Seaborn)
 
 ## Overview
 
