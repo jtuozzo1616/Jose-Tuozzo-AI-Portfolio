@@ -50,3 +50,15 @@ How VLMs integrate text and image embeddings
 How transfer learning accelerates object detection performance
 
 Practical challenges such as dataset handling, GPU usage, and model evaluation
+
+## My Role in These Computer Vision Projects
+
+Across these labs, I was responsible for:
+
+- Designing and implementing convolutional neural network (CNN) and vision-language model (VLM) notebooks end to end  
+- Preparing image datasets and performing preprocessing such as resizing, normalization, and augmentations  
+- Training, validating, and evaluating CNNs, object detection models, and VLMs (CLIP / BLIP)  
+- Running transfer learning workflows with TensorFlow Hub and Pascal VOC  
+- Visualizing detection outputs, attention maps, similarity matrices, and classification results  
+- Documenting findings, interpreting accuracy, loss curves, bounding-box metrics, and explaining model limitations  
+
