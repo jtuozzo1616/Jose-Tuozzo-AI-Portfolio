@@ -27,6 +27,7 @@ This section contains three core computer vision labs covering Convolutional Neu
 ## How to Run
 1. Open any notebook in Google Colab or Jupyter Notebook  
 2. Install required libraries:
+!pip install tensorflow opencv-python matplotlib seaborn torch torchvision
 3. For Object Detection, enable GPU in Colab:
 4. Runtime → Change runtime type → GPU
 
