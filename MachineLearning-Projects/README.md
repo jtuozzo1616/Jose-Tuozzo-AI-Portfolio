@@ -1,9 +1,8 @@
 
 ---
 
-### 📉 2. README – MACHINE LEARNING (HOUSE PRICES REGRESSION)
 
-# House Prices Regression – Machine Learning Project
+# 📉 House Prices Regression – Machine Learning Project
 
 ## Overview
 
