@@ -4,6 +4,23 @@
 I am a student in the Applied Artificial Intelligence program at Houston Community College, focusing on computer vision, machine learning, and foundational data science. My work combines practical implementation with hands-on experimentation across AI models, visual recognition systems, and analytical tools used in real-world data pipelines.  
 This portfolio highlights the core projects completed throughout my AI coursework, including deep learning, object detection, and data analysis fundamentals.
 
+## Portfolio Overview
+
+This portfolio is organized into three main sections:
+
+### 🔵 Computer Vision
+- [Lab 05 – CNN Classifier: Chihuahua vs Muffin](./ComputerVision/Lab05-CNN)
+- [Lab 08 – Visual Language Models (CLIP / BLIP / BLIP-2)](./ComputerVision/Lab08-VLM)
+- [Pascal VOC Object Detection – Transfer Learning](./ComputerVision/ObjectDetection)
+
+### 🟢 Machine Learning
+- [House Prices Regression Model](./MachineLearning/HousePricesRegression)
+
+### 🛡 Cybersecurity Data Analysis
+- [Pandas 101 – Foundations](./Cybersecurity/Pandas101)
+- [Matplotlib 101 – Visualization Basics](./Cybersecurity/Matplotlib101)
+- [Seaborn 101 – Statistical Visualizations](./Cybersecurity/Seaborn101)
+
 ---
 
 ## Technical Skills
