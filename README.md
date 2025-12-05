@@ -1,33 +1,56 @@
 # José Tuozzo – Applied AI Portfolio
 
 ## About Me
-I am an Applied Artificial Intelligence student at Houston Community College with experience in computer vision, machine learning, and foundational data science (Pandas, Matplotlib, Seaborn). This portfolio includes my core AI projects and my data analysis fundamentals.
+I am a student in the Applied Artificial Intelligence program at Houston Community College, focusing on computer vision, machine learning, and foundational data science. My work combines practical implementation with hands-on experimentation across AI models, visual recognition systems, and analytical tools used in real-world data pipelines.  
+This portfolio highlights the core projects completed throughout my AI coursework, including deep learning, object detection, and data analysis fundamentals.
+
+---
 
 ## Technical Skills
-- **Python**, Jupyter Notebook, Google Colab  
-- **Machine Learning**: regression, validation, metrics  
-- **Deep Learning**: CNNs, image classification, object detection  
-- **Computer Vision**: OpenCV, image preprocessing, detection pipelines  
-- **Data Analysis**: Pandas (cleaning, merging, filtering), Matplotlib (basic charts), Seaborn (statistical visualizations)  
+- **Programming & Tools:** Python, Jupyter Notebook, Google Colab  
+- **Machine Learning:** Regression modeling, train/validation/test workflows, evaluation metrics (MAE, MSE, R²)  
+- **Deep Learning:** Convolutional Neural Networks (CNNs), transfer learning, image classification, object detection  
+- **Computer Vision:** OpenCV, preprocessing pipelines, bounding box visualization, TensorFlow Hub models  
+- **Data Analysis Foundations:**  
+  - **Pandas:** data cleaning, merging, filtering, grouping  
+  - **Matplotlib:** basic charting, visual trends  
+  - **Seaborn:** statistical visualizations, correlation analysis  
+
+---
 
 ## Featured Sections
 
 ### 🔵 Computer Vision (ITAI 1378)
-- SmartInventoryCounter – Object Detection  
-- Chihuahua vs Muffin – CNN Classifier  
-- Pascal VOC Object Detection
+Hands-on labs applying CNNs, VLMs, and object detection frameworks.
 
-### 🟢 Machine Learning Projects
-- House Prices Regression (ML Midterm)
+- **Lab 05 — CNN Classifier: Chihuahua vs Muffin**  
+  Implemented convolutional architectures to classify visually similar categories, comparing performance against traditional neural networks.
 
-### Cybersecurity (Pandas, Matplotlib, Seaborn)
-Introductory notebooks demonstrating essential data science tools:
-- Pandas 101 (loading, cleaning, filtering, grouping)  
-- Matplotlib 101 (plots, bar charts, scatter, line charts)  
-- Seaborn 101 (heatmaps, histograms, pairplots)
+- **Lab 08 — Visual Language Models (CLIP / BLIP / BLIP-2)**  
+  Explored multimodal AI through zero-shot classification, caption generation, VQA, and embedding similarity.
+
+- **Pascal VOC Object Detection (Transfer Learning)**  
+  Applied SSD MobileNet with TensorFlow Hub to detect objects and evaluate before/after inference results.
+
+---
+
+### 🟢 Machine Learning (ML Midterm)
+- **House Prices Regression Project**  
+  Built and evaluated multiple regression models to predict home prices. Compared Linear Regression, Decision Trees, Random Forests, and Gradient Boosting, using MAE, MSE, and R² for model selection.
+
+---
+
+### 🛡 Cybersecurity – Data Analysis Foundations
+Introductory notebooks demonstrating essential data analysis skills through the lens of cybersecurity data:
+
+- **Pandas 101:** loading datasets, cleaning, filtering, grouping, summarizing  
+- **Matplotlib 101:** visual patterns, bar/line/scatter plots  
+- **Seaborn 101:** heatmaps, distribution analysis, pairplots  
+
+These exercises establish the analytical foundation required for future threat-detection and anomaly-analysis workflows.
+
+---
 
 ## Contact
-- **Email:** jmtuozzoi@gmail.com
-- **LinkedIn:** https://www.linkedin.com/in/jos%C3%A9-tuozzo-a018762a7/
-- **GitHub:** https://github.com/Jose-Tuozzo
-
+- **Email:** jmtuozzoi@gmail.com  
+- **LinkedIn:** https://www.linkedin.com/in/jos%C3%A9-tuozzo-a018762a  
