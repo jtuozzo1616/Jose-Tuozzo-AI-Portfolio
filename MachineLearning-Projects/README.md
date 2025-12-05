@@ -43,4 +43,15 @@ Differences between linear and non-linear regression models
 How to evaluate and select models based on statistical metrics
 
 Importance of preprocessing for ML performance
+## My Role in This Machine Learning Project
+
+In the House Prices Regression project, I was responsible for:
+
+- Designing and implementing the full ML notebook workflow  
+- Cleaning, filtering, and preparing housing dataset features  
+- Performing exploratory data analysis (EDA) to understand correlations and trends  
+- Training and comparing regression models using scikit-learn  
+- Evaluating performance using MAE, MSE, RMSE, and R²  
+- Visualizing model outputs, prediction errors, and feature importance  
+- Writing a complete technical analysis explaining results and model decisions  
 
