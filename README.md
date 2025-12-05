@@ -20,7 +20,7 @@ I am an Applied Artificial Intelligence student at Houston Community College wit
 ### 🟢 Machine Learning Projects
 - House Prices Regression (ML Midterm)
 
-### 📊 Data Fundamentals (Pandas, Matplotlib, Seaborn)
+### Cybersecurity (Pandas, Matplotlib, Seaborn)
 Introductory notebooks demonstrating essential data science tools:
 - Pandas 101 (loading, cleaning, filtering, grouping)  
 - Matplotlib 101 (plots, bar charts, scatter, line charts)  
