@@ -1,96 +1,25 @@
-# Data Fundamentals – Pandas, Matplotlib, and Seaborn
+# Cybersecurity Data Analysis – Foundations (Pandas, Matplotlib, Seaborn)
 
-This folder contains essential data analysis and visualization fundamentals used across all machine learning and AI projects. These notebooks demonstrate core skills needed to understand, explore, and visualize datasets effectively.
+## Overview
+This section contains three introductory data analysis projects designed to build core skills essential for cybersecurity workflows. Each notebook focuses on a foundational tool—Pandas, Matplotlib, or Seaborn—used for exploring, cleaning, visualizing, and interpreting datasets that could represent logs, alerts, or security events.
 
-The goal of this section is to show competency in the three foundational Python libraries for data science:
+## Objectives
+- Learn how to manipulate and analyze structured data using Pandas  
+- Build visualizations to detect trends or anomalies relevant to cybersecurity  
+- Understand how to summarize patterns through statistical graphics  
+- Develop the analytical foundation required for threat detection and incident analysis  
 
-- **Pandas** → Data loading, cleaning, filtering, grouping  
-- **Matplotlib** → Basic plotting and figure customization  
-- **Seaborn** → Statistical visualizations and exploratory data analysis  
-
-These notebooks form the base of any machine learning workflow and demonstrate your ability to work with real datasets.
-
----
-
-## 📘 1. Pandas 101
-
-### What you learn
-- Reading CSV files  
-- Checking dataset structure (`head`, `tail`, `info`, `describe`)  
-- Selecting columns and filtering rows  
-- Handling missing values  
-- GroupBy operations  
-- Basic statistics and aggregations  
-
-### Files included
-- `Pandas101.ipynb` *(or `.py`, depending on your final upload)*  
-- Optional: interpretation or output text files  
-- Example dataset (if required)
-
-Pandas is the backbone of data preprocessing for ML, so this notebook shows your ability to prepare data before modeling.
-
----
-
-## 📙 2. Matplotlib 101
-
-### What you learn
-- Line charts  
-- Bar charts  
-- Scatter plots  
-- Customizing titles, labels, colors  
-- Saving figures to file  
-
-### Files included
-- `Matplotlib101.ipynb`
-
-Matplotlib is the base plotting library in Python and is used everywhere in ML and CV for visualizing metrics, results, and training curves.
-
----
-
-## 📗 3. Seaborn 101
-
-### What you learn
-- Distribution plots (histograms, KDE)  
-- Boxplots and violin plots  
-- Heatmaps  
-- Pairplots for feature relationships  
-- Styling and themes  
-
-### Files included
-- `Seaborn101.ipynb`
-
-Seaborn builds on Matplotlib and is used to quickly identify statistical patterns and correlations that guide ML preprocessing and modeling decisions.
-
----
-
-## 🧰 Technologies Used
-
+## Technologies Used
 - Python  
+- Jupyter Notebook / Google Colab  
 - Pandas  
 - Matplotlib  
 - Seaborn  
-- Jupyter Notebook / Google Colab  
 
----
+## How to Run
+1. Open the notebook in Google Colab or Jupyter Notebook  
+2. Install required libraries:
+```python
+!pip install pandas matplotlib seaborn
 
-## 📌 How to Use This Folder
-
-1. Choose the topic you want to explore: Pandas, Matplotlib, or Seaborn.  
-2. Open the corresponding notebook.  
-3. Run each cell in Google Colab or Jupyter Notebook.  
-4. Review the outputs and visualizations to understand how the library works.  
-5. Apply these concepts in your Machine Learning and Computer Vision projects.
-
----
-
-## 🎯 Purpose
-
-This folder demonstrates that you have strong foundations in data analysis.  
-Before building ML models or training neural networks, every AI engineer must be able to:
-
-- Clean data  
-- Explore patterns  
-- Visualize insights  
-
-This section shows that you can do exactly that.
 
