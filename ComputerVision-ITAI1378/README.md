@@ -1,7 +1,7 @@
 
 ---
 
-# 🔴 3. README – COMPUTER VISION 
+# 🔴 README – COMPUTER VISION 
 
 
 # Computer Vision Projects – CNNs, VLMs, and Object Detection
