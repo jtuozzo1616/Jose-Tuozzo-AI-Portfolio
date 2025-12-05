@@ -1,74 +1,96 @@
-# Cybersecurity & AI – Concepts and Summaries
+# Data Fundamentals – Pandas, Matplotlib, and Seaborn
 
-This folder contains written work and diagrams related to cybersecurity concepts studied alongside AI, including attack types, risk, and defense strategies.
+This folder contains essential data analysis and visualization fundamentals used across all machine learning and AI projects. These notebooks demonstrate core skills needed to understand, explore, and visualize datasets effectively.
 
-The focus here is on **understanding security at a high level**, not on exploit coding.
+The goal of this section is to show competency in the three foundational Python libraries for data science:
 
-## Topics Covered
+- **Pandas** → Data loading, cleaning, filtering, grouping  
+- **Matplotlib** → Basic plotting and figure customization  
+- **Seaborn** → Statistical visualizations and exploratory data analysis  
 
-### 1. Zero-Click Attacks (Conceptual Overview)
-Documents explaining how zero-click attacks work and why they are dangerous:
+These notebooks form the base of any machine learning workflow and demonstrate your ability to work with real datasets.
 
-- Examples such as:
-  - MMS-based exploits (media parsing vulnerabilities)
-  - VoIP call exploits
-  - Malicious messages that trigger bugs without user interaction
-- Key ideas:
-  - No user action required
-  - Attack surface in message parsing and media libraries
-  - Importance of patching and sandboxing
+---
 
-You can include:
-- A short PDF or markdown summary
-- A diagram like `ZeroClick_AttackFlow.png`
+## 📘 1. Pandas 101
 
-### 2. AI Security Threats
-High-level explanations of how AI systems can be attacked or abused, for example:
+### What you learn
+- Reading CSV files  
+- Checking dataset structure (`head`, `tail`, `info`, `describe`)  
+- Selecting columns and filtering rows  
+- Handling missing values  
+- GroupBy operations  
+- Basic statistics and aggregations  
 
-- Prompt injection and jailbreaks for AI assistants
-- Data poisoning (corrupting training data)
-- Model exfiltration (stealing models via excessive queries)
-- Membership inference (guessing if a sample was in the training set)
+### Files included
+- `Pandas101.ipynb` *(or `.py`, depending on your final upload)*  
+- Optional: interpretation or output text files  
+- Example dataset (if required)
 
-You can include:
-- Summaries
-- Diagrams like `AI_Security_Threats.png`
+Pandas is the backbone of data preprocessing for ML, so this notebook shows your ability to prepare data before modeling.
 
-### 3. NIST AI Risk Management Framework (AI RMF)
-Notes and diagrams describing:
+---
 
-- **Govern** – policies, roles, and accountability
-- **Map** – context, stakeholders, and risk
-- **Measure** – evaluation, metrics, testing
-- **Manage** – risk responses and continuous improvement
+## 📙 2. Matplotlib 101
 
-Files might include:
-- `NIST_AI_RMF_Notes.md`
-- `NIST_AI_RMF_Diagram.png`
+### What you learn
+- Line charts  
+- Bar charts  
+- Scatter plots  
+- Customizing titles, labels, colors  
+- Saving figures to file  
 
-### 4. SOC / DFIR Fundamentals
-Basic understanding of:
+### Files included
+- `Matplotlib101.ipynb`
 
-- Security Operations Center (SOC) roles
-- Digital Forensics and Incident Response (DFIR)
-- Incident response lifecycle:
-  - Identification
-  - Containment
-  - Eradication
-  - Recovery
-  - Lessons learned
+Matplotlib is the base plotting library in Python and is used everywhere in ML and CV for visualizing metrics, results, and training curves.
 
-You can include:
-- Flowcharts (e.g., `SOC_Incident_Flowchart.png`)
-- Short summaries of procedures
+---
 
-## Purpose of This Folder
+## 📗 3. Seaborn 101
 
-Even though these are not coding-heavy projects, they show:
+### What you learn
+- Distribution plots (histograms, KDE)  
+- Boxplots and violin plots  
+- Heatmaps  
+- Pairplots for feature relationships  
+- Styling and themes  
 
-- Awareness of modern cyber threats
-- Understanding of how AI and security intersect
-- Ability to read, summarize, and communicate technical risk
+### Files included
+- `Seaborn101.ipynb`
 
-This is useful if you want to show employers that you are not only an AI/ML developer, but also aware of security and risk.
+Seaborn builds on Matplotlib and is used to quickly identify statistical patterns and correlations that guide ML preprocessing and modeling decisions.
+
+---
+
+## 🧰 Technologies Used
+
+- Python  
+- Pandas  
+- Matplotlib  
+- Seaborn  
+- Jupyter Notebook / Google Colab  
+
+---
+
+## 📌 How to Use This Folder
+
+1. Choose the topic you want to explore: Pandas, Matplotlib, or Seaborn.  
+2. Open the corresponding notebook.  
+3. Run each cell in Google Colab or Jupyter Notebook.  
+4. Review the outputs and visualizations to understand how the library works.  
+5. Apply these concepts in your Machine Learning and Computer Vision projects.
+
+---
+
+## 🎯 Purpose
+
+This folder demonstrates that you have strong foundations in data analysis.  
+Before building ML models or training neural networks, every AI engineer must be able to:
+
+- Clean data  
+- Explore patterns  
+- Visualize insights  
+
+This section shows that you can do exactly that.
 
