@@ -1,0 +1,6 @@
+Interpretation (2–3 sentences for the write‑up)
+
+• MS shows a 100% hire rate in this sample, BS about 71.4%, and PhD 50.0%.
+• This suggests that, for this dataset, holding a master's degree is associated with the highest likelihood of hire,
+  while PhD applicants have the lowest rate among the three groups.
+• Because the sample size is small (n=13) and unbalanced by education level, these results should be taken as indicative, not definitive.
