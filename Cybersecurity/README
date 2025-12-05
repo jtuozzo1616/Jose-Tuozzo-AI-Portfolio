@@ -1,1 +1,74 @@
+# Cybersecurity & AI – Concepts and Summaries
+
+This folder contains written work and diagrams related to cybersecurity concepts studied alongside AI, including attack types, risk, and defense strategies.
+
+The focus here is on **understanding security at a high level**, not on exploit coding.
+
+## Topics Covered
+
+### 1. Zero-Click Attacks (Conceptual Overview)
+Documents explaining how zero-click attacks work and why they are dangerous:
+
+- Examples such as:
+  - MMS-based exploits (media parsing vulnerabilities)
+  - VoIP call exploits
+  - Malicious messages that trigger bugs without user interaction
+- Key ideas:
+  - No user action required
+  - Attack surface in message parsing and media libraries
+  - Importance of patching and sandboxing
+
+You can include:
+- A short PDF or markdown summary
+- A diagram like `ZeroClick_AttackFlow.png`
+
+### 2. AI Security Threats
+High-level explanations of how AI systems can be attacked or abused, for example:
+
+- Prompt injection and jailbreaks for AI assistants
+- Data poisoning (corrupting training data)
+- Model exfiltration (stealing models via excessive queries)
+- Membership inference (guessing if a sample was in the training set)
+
+You can include:
+- Summaries
+- Diagrams like `AI_Security_Threats.png`
+
+### 3. NIST AI Risk Management Framework (AI RMF)
+Notes and diagrams describing:
+
+- **Govern** – policies, roles, and accountability
+- **Map** – context, stakeholders, and risk
+- **Measure** – evaluation, metrics, testing
+- **Manage** – risk responses and continuous improvement
+
+Files might include:
+- `NIST_AI_RMF_Notes.md`
+- `NIST_AI_RMF_Diagram.png`
+
+### 4. SOC / DFIR Fundamentals
+Basic understanding of:
+
+- Security Operations Center (SOC) roles
+- Digital Forensics and Incident Response (DFIR)
+- Incident response lifecycle:
+  - Identification
+  - Containment
+  - Eradication
+  - Recovery
+  - Lessons learned
+
+You can include:
+- Flowcharts (e.g., `SOC_Incident_Flowchart.png`)
+- Short summaries of procedures
+
+## Purpose of This Folder
+
+Even though these are not coding-heavy projects, they show:
+
+- Awareness of modern cyber threats
+- Understanding of how AI and security intersect
+- Ability to read, summarize, and communicate technical risk
+
+This is useful if you want to show employers that you are not only an AI/ML developer, but also aware of security and risk.
 
