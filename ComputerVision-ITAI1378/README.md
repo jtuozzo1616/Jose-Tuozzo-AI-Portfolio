@@ -1,8 +1,7 @@
 
 ---
 
-# 🔴 **3. README – COMPUTER VISION (ALL THREE LABS)**  
-(para tu carpeta ComputerVision)
+# 🔴 **3. README – COMPUTER VISION **  
 
 
 # Computer Vision Projects – CNNs, VLMs, and Object Detection
