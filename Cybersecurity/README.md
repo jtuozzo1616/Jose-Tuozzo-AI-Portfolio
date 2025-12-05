@@ -39,4 +39,14 @@ How visualization assists in detecting unusual patterns in security data
 
 How to interpret distributions, correlations, and trends
 
+## My Role in These Cybersecurity Data Analysis Projects
+
+In these foundational data-science-for-cybersecurity exercises, I was responsible for:
+
+- Implementing each notebook end to end using Pandas, Matplotlib, and Seaborn  
+- Loading and cleaning datasets, correcting formats, and exploring statistical properties  
+- Creating visualizations such as bar charts, histograms, scatter plots, heatmaps, and pairplots  
+- Interpreting results in the context of data analysis and cybersecurity insights  
+- Documenting findings clearly and explaining the purpose of each visualization  
+- Ensuring each notebook is readable, reproducible, and aligned with academic best practices  
 
