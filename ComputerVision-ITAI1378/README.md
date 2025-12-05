@@ -34,7 +34,7 @@ A CNN image classifier trained to distinguish between images of chihuahuas and m
   - `Chihuahua-vs-Muffin-CNN/Chihuahua_vs_Muffin.ipynb`  
   - `Chihuahua-vs-Muffin-CNN/results/` (accuracy plot, confusion matrix, predictions)
 
-### 3. Pascal VOC Object Detection
+### 3. Object Detection using Transfer learning and Pascal VOC 207 Dataset
 
 Object detection using data in Pascal VOC format and a deep learning framework.
 
