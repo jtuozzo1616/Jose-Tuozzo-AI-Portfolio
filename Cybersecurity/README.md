@@ -19,7 +19,24 @@ This section contains three introductory data analysis projects designed to buil
 ## How to Run
 1. Open the notebook in Google Colab or Jupyter Notebook  
 2. Install required libraries:
-```python
 !pip install pandas matplotlib seaborn
+3. Run all cells from top to bottom
+4. Review outputs such as tables, graphs, and summary statistics
+
+## Results
+
+Pandas 101: demonstrated dataset loading, cleaning, filtering, grouping
+
+Matplotlib 101: generated bar charts, line plots, scatterplots
+
+Seaborn 101: produced heatmaps, histograms, pairplots for deeper insight
+
+## Key Learnings
+
+How to preprocess and structure real-world datasets
+
+How visualization assists in detecting unusual patterns in security data
+
+How to interpret distributions, correlations, and trends
 
 
