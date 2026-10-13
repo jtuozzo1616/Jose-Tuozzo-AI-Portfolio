@@ -2,9 +2,9 @@
 
 **Student portfolio:** José Miguel Tuozzo Izaguirre  
 **Sole project contributor:** José Miguel Tuozzo Izaguirre  
-**Submission status:** Individual / Solo (instructor approval required because the rubric specifies groups of 3–4)  
-**Individual public GitHub repository:** `[ADD ACTUAL WORKING URL]`  
-**Status:** Developed notebook **not yet executed on the approved data in Colab**. Dataset instructor approval required before submission.
+**Submission format:** Individual / Solo (check with instructor because original rubric specifies groups of 3–4)  
+**Public GitHub project folder:** https://github.com/jtuozzo1616/Jose-Tuozzo-AI-Portfolio/tree/main/ITAI2373-NewsBot-Midterm  
+**Status:** Public source code uploaded; **empirical execution on real BBC data remains unverified**. Confirm dataset and solo-submission compliance against course instructions before submitting.
 
 ## What this does
 
