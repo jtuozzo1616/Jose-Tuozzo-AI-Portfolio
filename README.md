@@ -6,7 +6,20 @@ This portfolio highlights the core projects completed throughout my AI coursewor
 
 ## Portfolio Overview
 
-This portfolio is organized into three main sections:
+This portfolio includes four main sections, including a complete natural-language-processing midterm:
+
+---
+
+### 📰 Natural Language Processing — ITAI 2373
+
+**[NewsBot Intelligence System — Midterm](ITAI2373-NewsBot-Midterm/README.md)**
+
+A complete eight-module historical news NLP project with text normalization, TF-IDF, POS/dependency syntax, VADER sentiment, named entities, and multiclass classification. The portfolio folder contains the runnable notebook, code, reproducibility files, **eight generated figures**, **seven-page technical PDF**, and a **two-page reflective journal draft**. A real BBC evaluation of 288 holdout articles achieved **96.18% accuracy** and **0.9605 macro-F1** using a tuned Linear SVM. The results describe historical BBC coverage only; the reflection requires the student's firsthand review.
+
+- [Open the course notebook](ITAI2373-NewsBot-Midterm/Midterm_NewsBot_Intelligence_System.ipynb)
+- [Read the data-grounded technical findings](ITAI2373-NewsBot-Midterm/docs/Technical_Results_Summary.md)
+- [View academic technical report PDF](ITAI2373-NewsBot-Midterm/docs/MT_Report_Group_Solo_Jose_Miguel_Tuozzo_Izaguirre_ITAI2373.pdf)
+- [Inspect full canonical implementation and successful tests](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System)
 
 ---
 
@@ -45,8 +58,8 @@ Foundational data science labs using Pandas, Matplotlib, and Seaborn.
 ---
 
 ## Technical Skills
-- **Programming & Tools:** Python, Jupyter Notebook, Google Colab  
-- **Machine Learning:** Regression modeling, train/validation/test workflows, evaluation metrics (MAE, MSE, R²)  
+- **Programming & Tools:** Python, Jupyter Notebook, Google Colab, GitHub Actions, Streamlit  
+- **Machine Learning:** Regression and text classification, cross-validation, TF-IDF, scikit-learn pipelines, holdout testing, evaluation metrics (MAE, MSE, R², accuracy, macro-F1)  
 - **Deep Learning:** Convolutional Neural Networks (CNNs), transfer learning, image classification, object detection  
 - **Computer Vision:** OpenCV, preprocessing pipelines, bounding box visualization, TensorFlow Hub models  
 - **Data Analysis Foundations:**  
@@ -57,6 +70,10 @@ Foundational data science labs using Pandas, Matplotlib, and Seaborn.
 ---
 
 ## Featured Sections
+
+### 📰 Natural Language Processing — NewsBot
+Applied all eight foundational NLP modules to a single reproducible pipeline, compared four classification baselines and reported class-level holdout metrics. [Complete submission folder](ITAI2373-NewsBot-Midterm/README.md).
+
 
 ### 🔵 Computer Vision (ITAI 1378)
 Hands-on labs applying CNNs, VLMs, and object detection frameworks.
