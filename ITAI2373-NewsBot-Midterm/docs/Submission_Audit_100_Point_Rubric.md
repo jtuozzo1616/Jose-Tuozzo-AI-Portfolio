@@ -1,5 +1,4 @@
-# NewsBot — evidence-based alignment with the instructor's 100-point rubric
-
+# NewsBot — evidence-based alignment 
 **Student:** José Miguel Tuozzo Izaguirre | **Course:** ITAI 2373  
 **Portfolio:** https://github.com/jtuozzo1616/Jose-Tuozzo-AI-Portfolio/tree/main/ITAI2373-NewsBot-Midterm  
 **Canonical source:** https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System
@@ -7,8 +6,8 @@
 | Instructor rubric | Maximum | Evidence currently available |
 |---|---:|---|
 | GitHub repository | 30 | Named public portfolio folder; canonical notebook, README, code, automated tests, charts, aggregate CSV/JSON, experiment manifest |
-| Technical implementation | 30 | All eight NLP modules completed in a [successful real-data run](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/actions/runs/38491913062); end-to-end demo on fictional articles; optional dashboard source |
-| Analysis and insights | 30 | 1,440 BBC articles, tuned SVM, holdout accuracy **0.9618**, macro-F1 **0.9605**, class-level and confusion analysis, ablation, actual category-level linguistic statistics |
+| Technical implementation | 30 | All eight NLP modules completed in a [successful real-data run](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/actions/runs/38775732890); end-to-end demo on fictional articles; optional dashboard source |
+| Analysis and insights | 30 | 1,440 BBC articles; tuned SVM with **0.9618** accuracy and **0.9605** macro-F1; 11-error [case study](HOLDOUT_ERROR_CASE_STUDY.md) with nine confusion directions, per-desk precision/recall tradeoffs, ablation and linguistic comparisons |
 | Presentation and documentation | 10 | Seven-page technical PDF, two-page reflective journal draft, README, Colab launcher and demo script; **no recorded demo evidenced** |
 
 ### Results, not promises
@@ -17,7 +16,7 @@
 - 11 holdout errors out of 288. Lowest holdout F1: entertainment (0.9515); highest: sport (0.9784).
 - Cross-validated macro-F1: tuned SVM **0.9801**, versus dummy majority baseline **0.0769** (untuned comparison). Compare like with like.
 - All ten synthetic software tests passed; these do **not** replace the heldout model evaluation.
-- Figures and scores are in the public repository; the executed notebook is attached to the passing GitHub Actions run. All findings are from historical BBC and are not externally validated.
+- Figures, scores and the **fully executed notebook** are [permanently committed](NewsBot_Executed_Results.ipynb) in GitHub as well as independently checked by Actions. The [error-direction counts](../outputs/error_directions.csv) reconcile with class recall and precision. Findings are restricted to historical BBC news and have not been externally validated.
 
 ### Outstanding grading dependencies
 
