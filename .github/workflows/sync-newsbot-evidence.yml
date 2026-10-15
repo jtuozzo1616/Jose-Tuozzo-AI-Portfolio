@@ -1,0 +1,69 @@
+name: Sync NewsBot Submitted Evidence
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/sync-newsbot-evidence.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  sync-course-evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out course portfolio
+        uses: actions/checkout@v4
+      - name: Copy canonical PDFs and the permanently executed notebook
+        shell: bash
+        run: |
+          set -euo pipefail
+          target="ITAI2373-NewsBot-Midterm"
+          mkdir -p "$target/docs"
+          source="https://raw.githubusercontent.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/main"
+          for filename in             MT_Report_Group_Solo_Jose_Miguel_Tuozzo_Izaguirre_ITAI2373.pdf             NewsBot_Reflection_Solo.pdf; do
+            curl --fail --location --silent --show-error --retry 3               "$source/docs/$filename" -o "$target/docs/$filename"
+          done
+          curl --fail --location --silent --show-error --retry 3             "$source/docs/NewsBot_Executed_Results.ipynb"             -o "$target/docs/NewsBot_Executed_Results.ipynb"
+          python -m pip install --quiet "pypdf>=4,<7"
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from pypdf import PdfReader
+          base=Path("ITAI2373-NewsBot-Midterm/docs")
+          expected={
+            "MT_Report_Group_Solo_Jose_Miguel_Tuozzo_Izaguirre_ITAI2373.pdf":7,
+            "NewsBot_Reflection_Solo.pdf":2,
+          }
+          for filename,pages in expected.items():
+              p=base/filename
+              if not p.read_bytes().startswith(b"%PDF-") or len(PdfReader(str(p)).pages)!=pages:
+                  raise SystemExit(f"Invalid report: {filename}")
+              print(f"Validated: {filename} ({pages} pages, {p.stat().st_size} bytes)")
+          path=base/"NewsBot_Executed_Results.ipynb"
+          nb=json.loads(path.read_text(encoding="utf-8"))
+          cells=nb["cells"]; code=[c for c in cells if c["cell_type"]=="code"]
+          if len(cells)!=36 or len(code)!=21:
+              raise SystemExit("Unexpected notebook structure")
+          if any(c.get("execution_count") is None or not c.get("outputs") for c in code):
+              raise SystemExit("Unexecuted cells present")
+          if any(o.get("output_type")=="error" for c in code for o in c.get("outputs",[])):
+              raise SystemExit("Notebook contains error output")
+          print(f"Validated: {len(code)} executed cells; permanent copy {path.stat().st_size} bytes")
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f "$target/docs/MT_Report_Group_Solo_Jose_Miguel_Tuozzo_Izaguirre_ITAI2373.pdf" \
+            "$target/docs/NewsBot_Reflection_Solo.pdf" \
+            "$target/docs/NewsBot_Executed_Results.ipynb"
+          if git diff --cached --quiet; then
+            echo "Course evidence already matches canonical GitHub versions"
+          else
+            git commit -m "docs: sync final NewsBot PDFs and executed notebook [skip ci]"
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
+          fi
