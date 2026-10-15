@@ -20,7 +20,7 @@ The recorded experiment retained **1,440 articles** after exact-text deduplicati
 | Reproducible setup | [QUICK_START_EN.md](QUICK_START_EN.md) |
 | Figures and evaluation | [outputs/](outputs/) |
 | Technical report | [Latest technical report](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/blob/main/docs/MT_Report_Group_Solo_Jose_Miguel_Tuozzo_Izaguirre_ITAI2373.pdf) |
-| Reflection | [Latest two-page reflection](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/blob/main/docs/NewsBot_Reflection_Solo.pdf) |
+| Reflection | [Latest two-page PDF](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/blob/main/docs/NewsBot_Reflection_Solo.pdf) · [Personal reading copy](docs/Personal_Reflection_Reading_Copy.md) |
 | Evidence from a completed execution | [GitHub Actions run](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/actions/runs/38775732890) |
 | Reviewer navigation | [Professor's guide in main repository](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/blob/main/docs/PROFESSOR_REVIEW_GUIDE.md) |
 
