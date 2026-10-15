@@ -22,12 +22,18 @@ jobs:
         run: |
           set -euo pipefail
           target="ITAI2373-NewsBot-Midterm"
-          mkdir -p "$target/docs"
+          mkdir -p "$target/docs" "$target/outputs"
           source="https://raw.githubusercontent.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/main"
           for filename in             MT_Report_Group_Solo_Jose_Miguel_Tuozzo_Izaguirre_ITAI2373.pdf             NewsBot_Reflection_Solo.pdf; do
             curl --fail --location --silent --show-error --retry 3               "$source/docs/$filename" -o "$target/docs/$filename"
           done
           curl --fail --location --silent --show-error --retry 3             "$source/docs/NewsBot_Executed_Results.ipynb"             -o "$target/docs/NewsBot_Executed_Results.ipynb"
+          # Mirror the text evidence and ensure professor-facing documentation matches the latest report.
+          for filename in HOLDOUT_ERROR_CASE_STUDY.md Technical_Results_Summary.md PROFESSOR_REVIEW_GUIDE.md Execution_and_Submission_Checklist.md FINAL_QUALITY_GATE.md Individual_Contributions.md QUALITY_ASSURANCE.md RUN_STATUS.md Submission_Audit_100_Point_Rubric.md VERIFICATION_RESULTS.md; do
+            curl --fail --location --silent --show-error --retry 3 "$source/docs/$filename" -o "$target/docs/$filename"
+          done
+          curl --fail --location --silent --show-error --retry 3 "$source/outputs/error_directions.csv" -o "$target/outputs/error_directions.csv"
+          curl --fail --location --silent --show-error --retry 3 "$source/verify_error_audit.py" -o "$target/verify_error_audit.py"
           python -m pip install --quiet "pypdf>=4,<7"
           python - <<'PY'
           import json
@@ -35,7 +41,7 @@ jobs:
           from pypdf import PdfReader
           base=Path("ITAI2373-NewsBot-Midterm/docs")
           expected={
-            "MT_Report_Group_Solo_Jose_Miguel_Tuozzo_Izaguirre_ITAI2373.pdf":7,
+            "MT_Report_Group_Solo_Jose_Miguel_Tuozzo_Izaguirre_ITAI2373.pdf":8,
             "NewsBot_Reflection_Solo.pdf":2,
           }
           for filename,pages in expected.items():
@@ -53,12 +59,18 @@ jobs:
           if any(o.get("output_type")=="error" for c in code for o in c.get("outputs",[])):
               raise SystemExit("Notebook contains error output")
           print(f"Validated: {len(code)} executed cells; permanent copy {path.stat().st_size} bytes")
+          import csv
+          with (base.parent/"outputs/error_directions.csv").open(newline="", encoding="utf-8") as infile:
+              directions=list(csv.DictReader(infile))
+          assert len(directions)==9 and sum(int(r["error_count"]) for r in directions)==11
+          print("Validated: 11 measured holdout errors across 9 observed confusion directions")
           PY
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -f "$target/docs/MT_Report_Group_Solo_Jose_Miguel_Tuozzo_Izaguirre_ITAI2373.pdf" \
             "$target/docs/NewsBot_Reflection_Solo.pdf" \
             "$target/docs/NewsBot_Executed_Results.ipynb"
+          git add -f "$target"/docs/*.md "$target/outputs/error_directions.csv" "$target/verify_error_audit.py"
           if git diff --cached --quiet; then
             echo "Course evidence already matches canonical GitHub versions"
           else
