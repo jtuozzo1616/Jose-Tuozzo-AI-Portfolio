@@ -19,8 +19,8 @@ The recorded experiment retained **1,440 articles** after exact-text deduplicati
 | Course notebook | [Midterm_NewsBot_Intelligence_System.ipynb](Midterm_NewsBot_Intelligence_System.ipynb) |
 | Reproducible setup | [QUICK_START_EN.md](QUICK_START_EN.md) |
 | Figures and evaluation | [outputs/](outputs/) |
-| Technical report | [PDF](docs/MT_Report_Group_Solo_Jose_Miguel_Tuozzo_Izaguirre_ITAI2373.pdf) |
-| Reflection | [Two-page PDF](docs/NewsBot_Reflection_Solo.pdf) |
+| Technical report | [Latest technical report](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/blob/main/docs/MT_Report_Group_Solo_Jose_Miguel_Tuozzo_Izaguirre_ITAI2373.pdf) |
+| Reflection | [Latest two-page reflection](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/blob/main/docs/NewsBot_Reflection_Solo.pdf) |
 | Evidence from a completed execution | [GitHub Actions run](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/actions/runs/38491913062) |
 | Reviewer navigation | [Professor's guide in main repository](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/blob/main/docs/PROFESSOR_REVIEW_GUIDE.md) |
 
