@@ -26,7 +26,7 @@ The [BBC holdout confusion matrix](outputs/06_confusion_matrix.png) shows **11 m
 | Runnable notebook | [Midterm_NewsBot_Intelligence_System.ipynb](Midterm_NewsBot_Intelligence_System.ipynb) |
 | Reproducible setup | [QUICK_START_EN.md](QUICK_START_EN.md) |
 | Figures and evaluation | [outputs/](outputs/) |
-| Technical report | [Current PDF — 7 pages](docs/MT_Report_Group_Solo_Jose_Miguel_Tuozzo_Izaguirre_ITAI2373.pdf) |
+| Technical report | [Current PDF — 8 pages](docs/MT_Report_Group_Solo_Jose_Miguel_Tuozzo_Izaguirre_ITAI2373.pdf) |
 | Reflection | [Current PDF — 2 pages](docs/NewsBot_Reflection_Solo.pdf) · [Personal reading copy](docs/Personal_Reflection_Reading_Copy.md) |
 | Evidence from a completed execution | [GitHub Actions run](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/actions/runs/38775732890) |
 | Professor's review guide | [Direct evidence and five-minute review path](docs/PROFESSOR_REVIEW_GUIDE.md) |
