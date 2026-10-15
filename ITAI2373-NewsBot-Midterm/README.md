@@ -4,7 +4,7 @@
 
 This is the course portfolio entry for **NewsBot Intelligence System**. The [main repository](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System) contains the maintained source, eight NLP modules, evaluation artifacts and research documentation.
 
-**[Launch in Google Colab](https://colab.research.google.com/github/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/blob/main/RUN_NEWSBOT_IN_COLAB.ipynb)** · **[Read the research results](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/blob/main/docs/Technical_Results_Summary.md)** · **[View completed execution](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/actions/runs/38775732890)**
+**[Browse executed notebook with outputs](docs/NewsBot_Executed_Results.ipynb)** · **[Launch in Google Colab](https://colab.research.google.com/github/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/blob/main/RUN_NEWSBOT_IN_COLAB.ipynb)** · **[Read the research results](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/blob/main/docs/Technical_Results_Summary.md)** · **[View completed execution](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/actions/runs/38775732890)**
 
 ## Project at a glance
 
@@ -16,14 +16,15 @@ The recorded experiment retained **1,440 articles** after exact-text deduplicati
 
 | Deliverable | Link |
 |---|---|
-| Course notebook | [Midterm_NewsBot_Intelligence_System.ipynb](Midterm_NewsBot_Intelligence_System.ipynb) |
+| Fully executed notebook | **[Open saved outputs, figures, and predictions](docs/NewsBot_Executed_Results.ipynb)** |
+| Runnable notebook | [Midterm_NewsBot_Intelligence_System.ipynb](Midterm_NewsBot_Intelligence_System.ipynb) |
 | Reproducible setup | [QUICK_START_EN.md](QUICK_START_EN.md) |
 | Figures and evaluation | [outputs/](outputs/) |
-| Technical report | [Latest technical report](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/blob/main/docs/MT_Report_Group_Solo_Jose_Miguel_Tuozzo_Izaguirre_ITAI2373.pdf) |
-| Reflection | [Latest two-page PDF](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/blob/main/docs/NewsBot_Reflection_Solo.pdf) · [Personal reading copy](docs/Personal_Reflection_Reading_Copy.md) |
+| Technical report | [Current PDF — 7 pages](docs/MT_Report_Group_Solo_Jose_Miguel_Tuozzo_Izaguirre_ITAI2373.pdf) |
+| Reflection | [Current PDF — 2 pages](docs/NewsBot_Reflection_Solo.pdf) · [Personal reading copy](docs/Personal_Reflection_Reading_Copy.md) |
 | Evidence from a completed execution | [GitHub Actions run](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/actions/runs/38775732890) |
 | Reviewer navigation | [Professor's guide in main repository](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/blob/main/docs/PROFESSOR_REVIEW_GUIDE.md) |
 
-The notebook source is intentionally saved without execution outputs. The successful workflow includes a downloadable executed notebook; figures and summary tables are also visible directly in this folder.
+The portfolio now provides **both** a clean notebook for running from scratch and a permanently committed notebook containing actual execution outputs. Its report, reflection, and executed notebook are byte-for-byte identical to the versions in the main project.
 
 For scope, source attribution, limitations and the optional Streamlit interface, see the [main README](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System). The professor's dataset-use approval and final submission arrangement should be confirmed separately.
