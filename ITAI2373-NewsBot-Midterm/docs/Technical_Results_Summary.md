@@ -2,7 +2,7 @@
 
 **Course:** ITAI 2373, Modules 1–8  
 **Student:** José Miguel Tuozzo Izaguirre  
-**Evidence:** [real-data successful workflow](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/actions/runs/38491913062), [run manifest](../outputs/run_manifest.json), [full analytical notebook](../Midterm_NewsBot_Intelligence_System.ipynb), [technical PDF](MT_Report_Group_Solo_Jose_Miguel_Tuozzo_Izaguirre_ITAI2373.pdf).  
+**Evidence:** [real-data successful workflow](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/actions/runs/38775732890), [run manifest](../outputs/run_manifest.json), [full analytical notebook](../Midterm_NewsBot_Intelligence_System.ipynb), [technical PDF](MT_Report_Group_Solo_Jose_Miguel_Tuozzo_Izaguirre_ITAI2373.pdf).  
 **Scope:** historical BBC articles (2004–2005), **not** live/news-of-2026 reporting.
 
 ## 1. Evaluation design and dataset provenance
@@ -31,6 +31,14 @@ After training-only tuning, Linear SVM with `C=2`, TF-IDF unigrams+bigrams and 1
 | tech | 0.9574 | 0.9574 | 0.9574 | 47 |
 
 **Editorial takeaway:** entertainment is the weakest class by F1, and its recall is 0.9245, so several entertainment articles would require human review instead of invisible routing. Sport had all 68 holdout items recovered (recall 1.0000), **not** evidence that sport predictions are always correct or that a model will generalize across publishers. The actual confusion summary includes two tech→business and two entertainment→tech errors; a cross-category article containing commercial or digital media terms may be genuinely ambiguous.
+
+### 2.1 Error diagnosis: why category-level metrics matter
+
+The [holdout error case study](HOLDOUT_ERROR_CASE_STUDY.md) examines **all 11 misclassified articles**, with a [count-only CSV](../outputs/error_directions.csv) that can be reconciled against the per-class precision and recall. Two directions occurred twice: **tech → business** and **entertainment → tech**. The remaining seven directions occurred once each. The observed story themes suggest overlap between editorial desks, such as financially troubled game studios and the economics or technology of entertainment. These are **plausible topic-overlap interpretations**, not causal explanations of the classifier's internal weights.
+
+The class totals distinguish two practical risks. Of 53 true entertainment stories, **four went to another desk**, contributing to entertainment's 92.45% recall. Meanwhile, all **68 actual sport stories were retrieved**, but **three non-sport items were incorrectly delivered to the sport desk**. Thus sport recall was 100% yet sport precision was 95.77%. For a newsroom, missed relevant stories and false deliveries impose different costs; reporting only overall accuracy would hide that distinction.
+
+**Proposed next evaluation:** ask editors to review cross-topic cases, measure overrides and average handling time by desk, and test a review/abstention policy on *new, independent* articles. Do not choose a threshold from these holdout errors and then report the same holdout as an unbiased test. SVM margins are not calibrated probabilities. The public case study publishes only aggregate labels and original topical paraphrases—not copyrighted BBC article text.
 
 ## 3. TF-IDF, POS and syntax observations
 
