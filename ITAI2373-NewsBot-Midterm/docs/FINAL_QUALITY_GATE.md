@@ -4,14 +4,14 @@
 **Student:** José Miguel Tuozzo Izaguirre  
 **Personal portfolio assignment folder:** https://github.com/jtuozzo1616/Jose-Tuozzo-AI-Portfolio/tree/main/ITAI2373-NewsBot-Midterm  
 **Canonical code/results:** https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System  
-**Successful full real-data workflow:** https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/actions/runs/38491913062
+**Successful full real-data workflow:** https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System/actions/runs/38775732890
 
 | Rubric section | Max | Confirmed evidence | Remaining dependency |
 |---|---:|---|---|
 | Repository | 30 | Portfolio entry with the instructor's exact folder name and full-source notebook; public canonical code and reproducible evidence | Confirm Canvas URL format with teacher |
 | Technical implementation | 30 | Eight NLP modules; 10 successful synthetic regression tests; complete real-data execution; five topic labels; Streamlit source | Actual free-tier Colab execution still for student to demonstrate if specifically requested |
 | Analysis and insights | 30 | 1,440 labeled BBC articles; 1,152 train/288 holdout; tuned Linear SVM; 96.18% holdout accuracy, 0.9605 macro-F1; eight figures, class metrics, robustness and [results interpretation](Technical_Results_Summary.md) | Student must be able to explain observed findings; no claims for modern external news |
-| Presentation and documentation | 10 | Seven-page PDF report, exactly two-page reflective PDF, portfolio README, recorded run evidence and video shot list | Reflection must be personalized; **video not recorded** |
+| Presentation and documentation | 10 | Eight-page PDF report, exactly two-page reflective PDF, portfolio README, recorded run evidence and video shot list | Reflection must be personalized; **final video not publicly linked** |
 
 ## Verification boundaries
 
