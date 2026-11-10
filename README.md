@@ -6,7 +6,7 @@ This portfolio highlights the core projects completed throughout my AI coursewor
 
 ## Portfolio Overview
 
-This portfolio includes four main sections, including a complete natural-language-processing midterm:
+This portfolio includes five main sections, including a complete natural-language-processing midterm:
 
 ---
 
@@ -109,3 +109,15 @@ These exercises establish the analytical foundation required for future threat-d
 ## Contact
 - **Email:** jmtuozzoi@gmail.com  
 - **LinkedIn:** https://www.linkedin.com/in/jos%C3%A9-tuozzo-a018762a  
+
+---
+
+### 🤖 Robotics AI — RoboGuide (ITAI 2377)
+
+**[RoboGuide AI: Evidence-Grounded PiDog Troubleshooting](ITAI2377-RoboGuide/README.md)** — source-attributed technical-support prototype with 8 engineered retrieval features, version-aware hardware safeguards, CPU-only operation, reproducible benchmark/ablation analysis, Gradio UI, **19 passing tests**, an executed Colab notebook, five visualizations and a 14-page technical report.
+
+- [Full source and reproducibility guide](ITAI2377-RoboGuide/README.md)
+- [Google Colab notebook](ITAI2377-RoboGuide/notebooks/RoboGuide_Colab.ipynb)
+- [Academic report PDF](ITAI2377-RoboGuide/FN_JoseTuozzo_TungTungTungSahar_ITAI2377.pdf)
+
+**Measured scope:** 24 curated official-source summaries; 43 manually authored queries; development MRR@5 improves 0.774 → 0.839, while the eight-question test slice is tied at 1.000. Results are exploratory, not external validation. Team contributions require individual confirmation.

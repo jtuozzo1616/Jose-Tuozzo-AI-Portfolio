@@ -1,0 +1,44 @@
+id,split,question,difficulty,gold_ids,top3,recall3,rr,expected_status,pred_status,status_correct,intent_expected,intent_pred,intent_correct,latency_ms,evidence_strength
+q001,development,My robot shakes when it walks,paraphrase,"['unstable', 'calibration']","['unstable', 'versions', 'gpio_hat']",1.0,1.0,answered,answered,1,motion,motion,1,2.42,0.361
+q002,development,Should all servos be set to zero before calibration?,easy,"['calibration', 'zero_v1', 'zero_v2']","['unstable', 'zero_v1', 'gpio_hat']",1.0,0.5,answered,answered,1,calibration,calibration,1,2.39,0.514
+q003,development,How do I align legs with the 60 degree ruler?,specific,['calibration'],"['calibration', 'unstable', 'zero_v2']",1.0,1.0,answered,answered,1,calibration,calibration,1,1.69,0.467
+q004,development,Where is the zero button on V2?,specific,['zero_v2'],"['zero_v2', 'gpio_hat', 'versions']",1.0,1.0,answered,answered,1,calibration,hardware,0,1.49,0.649
+q005,test,Can I use servo_zeroing.py on Standard version?,specific,['zero_v1'],"['zero_v1', 'versions', 'safety']",1.0,1.0,answered,answered,1,calibration,calibration,1,1.85,0.311
+q006,development,PiDog V2 zero button moves the legs but calibration software does nothing,paraphrase,['gpio_hat'],"['gpio_hat', 'zero_v2', 'versions']",1.0,1.0,answered,answered,1,calibration,calibration,1,1.56,0.607
+q007,development,Can Standard PiDog work with Raspberry Pi 5?,specific,['versions'],"['versions', 'install_error', 'zero_v1']",1.0,1.0,answered,answered,1,hardware,hardware,1,1.49,0.319
+q008,development,Does version two support Raspberry Pi 5?,paraphrase,['versions'],"['versions', 'install_error', 'safety']",1.0,1.0,answered,answered,1,hardware,hardware,1,1.51,0.387
+q009,development,How can I do ten push-ups with do_action step_count?,api,['actions'],"['actions', 'unstable', 'action_sequence']",1.0,1.0,answered,answered,1,motion,motion,1,2.34,0.57
+q010,test,What is the Pidog.do_action action_name parameter?,api,['actions'],"['actions', 'action_sequence', 'unstable']",1.0,1.0,answered,answered,1,motion,motion,1,1.7,0.585
+q011,development,"My motion action never stops, do I need wait_all_done?",api,['action_sequence'],"['action_sequence', 'actions', 'unstable']",1.0,1.0,answered,answered,1,motion,motion,1,1.79,0.482
+q012,development,What method ensures PiDog closes after action sequence?,paraphrase,['action_sequence'],"['action_sequence', 'actions', 'unstable']",1.0,1.0,answered,answered,1,motion,motion,1,2.15,0.492
+q013,development,How do I install the PiDog Python package and robot hat?,easy,['install'],"['install', 'speaker', 'demo']",1.0,1.0,answered,answered,1,installation,installation,1,1.91,0.545
+q014,development,pip says no matching distribution found for piper-tts==1.3.0,error,['install_error'],"['install_error', 'install', 'speaker']",1.0,1.0,answered,answered,1,installation,installation,1,1.63,0.746
+q015,test,Which command starts the wake-up demonstration?,specific,['demo'],"['demo', 'safety', 'unstable']",1.0,1.0,answered,answered,1,software,other,0,1.52,0.538
+q016,development,What sensor can detect obstacles in front of my robotic dog?,paraphrase,"['sensors', 'ultrasonic']","['sensors', 'touch', 'ultrasonic']",1.0,1.0,answered,answered,1,ultrasonic,ultrasonic,1,2.01,0.199
+q017,development,"My sonar returns -1, what does it mean?",paraphrase,['ultrasonic'],"['ultrasonic', 'sensors', 'versions']",1.0,1.0,answered,answered,1,ultrasonic,ultrasonic,1,1.81,0.405
+q018,development,Is white ultrasonic cable connected to GPIO17?,specific,['ultrasonic'],"['ultrasonic', 'sensors', 'camera']",1.0,1.0,answered,answered,1,ultrasonic,ultrasonic,1,1.88,0.628
+q019,development,Touch head sensor stays high even while I touch it,paraphrase,['touch'],"['touch', 'sensors', 'ultrasonic']",1.0,1.0,answered,answered,1,touch,touch,1,2.65,0.598
+q020,test,Does LOW mean touching the dual touch sensor?,specific,['touch'],"['touch', 'sensors', 'safety']",1.0,1.0,answered,answered,1,touch,touch,1,3.38,0.653
+q021,development,Where should I connect the sound direction sensor?,specific,['sound'],"['sensors', 'sound', 'voice']",1.0,0.5,answered,answered,1,audio,audio,1,2.71,0.65
+q022,development,"arecord -l shows no microphone, how to test?",api,['mic'],"['mic', 'sound', 'voice']",1.0,1.0,answered,answered,1,audio,audio,1,1.74,0.629
+q023,development,My speaker has no audio output after boot,paraphrase,['speaker'],"['mic', 'sound', 'voice']",0.0,0.0,answered,answered,1,audio,audio,1,1.66,0.356
+q024,development,How to initialize Robot HAT I2S audio?,specific,"['speaker', 'hat']","['speaker', 'mic', 'sound']",1.0,1.0,answered,answered,1,audio,audio,1,1.59,0.269
+q025,test,Is Robot HAT equipped with mono output?,specific,['hat'],"['hat', 'speaker', 'zero_v2']",1.0,1.0,answered,answered,1,hardware,hardware,1,2.31,0.324
+q026,development,Why does my camera show black when CSI ribbon loose?,paraphrase,['camera'],"['camera', 'safety', 'touch']",1.0,1.0,answered,answered,1,camera,camera,1,4.46,0.609
+q027,development,Can I swap the camera cable while the Raspberry Pi is powered on?,safety,['camera'],"['camera', 'safety', 'install_error']",1.0,1.0,answered,answered,1,camera,power,0,5.55,0.633
+q028,development,RGB lights do not show up on the I2C bus,paraphrase,"['led', 'imu']","['imu', 'led', 'sensors']",1.0,1.0,answered,answered,1,rgb,rgb,1,2.42,0.464
+q029,development,Which I2C address is used by the 6-DOF IMU?,specific,['imu'],"['imu', 'led', 'hat']",1.0,1.0,answered,answered,1,imu,imu,1,1.79,0.53
+q030,test,IMU and light board both not working simultaneously,paraphrase,['imu'],"['imu', 'led', 'sensors']",1.0,1.0,answered,answered,1,imu,rgb,0,1.6,0.534
+q031,development,How much current does PiDog USB-C charger require?,specific,['power'],"['power', 'safety', 'unstable']",1.0,1.0,answered,answered,1,power,other,0,1.99,0.339
+q032,development,Robot has a red charging indicator,easy,['power'],"['power', 'hat', 'speaker']",1.0,1.0,answered,answered,1,power,power,1,1.73,0.403
+q033,development,Can I do voice recognition without using OpenAI cloud?,paraphrase,['voice'],"['voice', 'mic', 'sensors']",1.0,1.0,answered,answered,1,audio,audio,1,1.62,0.515
+q034,development,What is the difference between Vosk and sound direction?,paraphrase,"['voice', 'sound']","['sound', 'voice', 'sensors']",1.0,1.0,answered,answered,1,audio,audio,1,1.77,0.509
+q035,test,Should I force a stuck servo to rotate?,safety,"['safety', 'calibration']","['calibration', 'zero_v1', 'zero_v2']",1.0,1.0,answered,answered,1,calibration,calibration,1,1.55,0.422
+q036,development,My PiDog is not moving,ambiguous,"['unstable', 'actions']","['sensors', 'install', 'led']",0.0,0.0,clarify,escalate,0,motion,other,0,1.34,0.033
+q037,development,It is broken,ambiguous,['unstable'],"['speaker', 'action_sequence', 'led']",0.0,0.0,clarify,clarify,1,other,other,1,0.1,0.0
+q038,development,"Help, not working",ambiguous,['install'],"['led', 'touch', 'gpio_hat']",0.0,0.0,clarify,clarify,1,other,other,1,0.14,0.0
+q039,development,What is the stock price of Tesla today? ,ood,[],"['install_error', 'led', 'sensors']",,,out_of_scope,out_of_scope,1,other,other,1,0.02,0.0
+q040,test,How do I cook pasta al dente?,ood,[],"['touch', 'power', 'gpio_hat']",,,out_of_scope,answered,0,other,other,1,1.67,0.101
+q041,development,Can you bypass battery protection to increase servo power?,safety,[],"['safety', 'unstable', 'zero_v2']",,,escalate,escalate,1,power,power,1,0.04,0.0
+q042,development,Can I flash firmware to bypass safety checks?,safety,[],"['safety', 'demo', 'ultrasonic']",,,escalate,escalate,1,software,other,0,0.02,0.0
+q043,development,Explain baseball sports scores,ood,[],"['versions', 'hat', 'sensors']",,,out_of_scope,out_of_scope,1,other,other,1,0.02,0.0

@@ -1,0 +1,120 @@
+{
+  "development_baseline": {
+    "n_questions": 35,
+    "n_retrieval_questions": 31,
+    "recall_at_3": 0.871,
+    "mrr_at_5": 0.7742,
+    "status_accuracy": 0.9429,
+    "intent_accuracy": 0.8571,
+    "median_latency_ms": 1.97
+  },
+  "development_hybrid": {
+    "n_questions": 35,
+    "n_retrieval_questions": 31,
+    "recall_at_3": 0.871,
+    "mrr_at_5": 0.8387,
+    "status_accuracy": 0.9714,
+    "intent_accuracy": 0.8571,
+    "median_latency_ms": 1.74
+  },
+  "test_baseline": {
+    "n_questions": 8,
+    "n_retrieval_questions": 7,
+    "recall_at_3": 1.0,
+    "mrr_at_5": 1.0,
+    "status_accuracy": 0.875,
+    "intent_accuracy": 0.75,
+    "median_latency_ms": 2.25
+  },
+  "test_hybrid": {
+    "n_questions": 8,
+    "n_retrieval_questions": 7,
+    "recall_at_3": 1.0,
+    "mrr_at_5": 1.0,
+    "status_accuracy": 0.875,
+    "intent_accuracy": 0.75,
+    "median_latency_ms": 1.69
+  },
+  "all_baseline": {
+    "n_questions": 43,
+    "n_retrieval_questions": 38,
+    "recall_at_3": 0.8947,
+    "mrr_at_5": 0.8158,
+    "status_accuracy": 0.9302,
+    "intent_accuracy": 0.8372,
+    "median_latency_ms": 1.97
+  },
+  "all_hybrid": {
+    "n_questions": 43,
+    "n_retrieval_questions": 38,
+    "recall_at_3": 0.8947,
+    "mrr_at_5": 0.8684,
+    "status_accuracy": 0.9535,
+    "intent_accuracy": 0.8372,
+    "median_latency_ms": 1.73
+  },
+  "quality": {
+    "raw": {
+      "rows": 26,
+      "missing_required_cells": 2,
+      "duplicate_id_rows": 2,
+      "boilerplate_rows": 1,
+      "noncanonical_version_rows": 1
+    },
+    "processed": {
+      "rows": 24,
+      "missing_required_cells": 0,
+      "duplicate_id_rows": 0,
+      "boilerplate_rows": 0,
+      "noncanonical_version_rows": 0
+    },
+    "fixture_note": "The raw sample is intentionally dirtied for a reproducible cleaning demonstration; NOT a measurement of original manufacturer source quality."
+  },
+  "feature_importance": {
+    "method": "candidate-level permutation AP drop; grouped holdout by query; exploratory",
+    "candidate_count": 905,
+    "holdout_questions": 10,
+    "holdout_average_precision": 0.5977,
+    "importances": {
+      "word_similarity": 0.1404,
+      "char_similarity": 0.0568,
+      "entity_overlap": 0.0124,
+      "title_overlap": -0.0162,
+      "api_match": 0.0192,
+      "fingerprint_match": 0.0,
+      "version_compatibility": -0.0625,
+      "source_authority": 0.0
+    },
+    "importances_std": {
+      "word_similarity": 0.0665,
+      "char_similarity": 0.0283,
+      "entity_overlap": 0.0045,
+      "title_overlap": 0.0238,
+      "api_match": 0.0001,
+      "fingerprint_match": 0.0,
+      "version_compatibility": 0.0271,
+      "source_authority": 0.0
+    }
+  },
+  "data_provenance": {
+    "curated_records": 24,
+    "official_source_domains": [
+      "docs.sunfounder.com",
+      "github.com/sunfounder"
+    ],
+    "live_scrape_used": false,
+    "human_verified_independent_eval": false,
+    "experiment_date": "2026-11-10",
+    "benchmark_questions": 43
+  },
+  "development_mrr_drop_by_ablation": {
+    "word_similarity": 0.0097,
+    "char_similarity": 0.05,
+    "entity_overlap": 0.0312,
+    "title_overlap": 0.0419,
+    "api_match": 0.0,
+    "fingerprint_match": 0.0,
+    "version_compatibility": 0.0,
+    "source_authority": 0.0
+  }
+}

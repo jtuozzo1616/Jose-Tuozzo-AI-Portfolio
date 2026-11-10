@@ -1,0 +1,153 @@
+[
+  {
+    "question": "My PiDog wobbles after assembly",
+    "version": null,
+    "status": "answered",
+    "strength": 0.133,
+    "answer": "Based on the manufacturer documentation (hardware: not specified):\n\n1. For Standard/V1 PiDog, use the manufacturer-provided zeroing script before assembly: cd ~/pidog/examples ; sudo python3 servo_zeroing.py. Return the servos to zero before reassembling legs. This procedure differs from V2 zero button. [S1]\n\n2. PiDog V2 with Robot HAT V5 has an onboard zeroing button that sets servos to zero without a script. Power the robot and press the zeroing button before reassembling misaligned legs following the official assembly instructions. This button is not present on Standard/V1. [S2]\n\nConfirm whether the robot is Standard/V1 or V2 before taking version-dependent steps.\n\nEvidence strength is a retrieval heuristic, not a probability of safety or correctness. No commands are executed by RoboGuide.",
+    "sources": [
+      {
+        "id": "zero_v1",
+        "title": "V1 or Standard servo zeroing",
+        "url": "https://docs.sunfounder.com/projects/pidog/en/latest/faq.html"
+      },
+      {
+        "id": "zero_v2",
+        "title": "V2 servo zero button",
+        "url": "https://docs.sunfounder.com/projects/pidog/en/latest/faq.html"
+      }
+    ]
+  },
+  {
+    "question": "My V2 zero button works but Python servo control does not",
+    "version": "v2",
+    "status": "answered",
+    "strength": 0.683,
+    "answer": "Based on the manufacturer documentation (hardware: v2):\n\n1. If V2 Robot HAT zero button moves servos but Python calibration cannot, the Raspberry Pi to Robot HAT GPIO header connection may be faulty. SunFounder notes soldering issues in the Pi 40-pin header and Robot HAT socket; take clear pictures of both for manufacturer support. Do not improvise electrical repairs. [S1]\n\n2. PiDog V2 with Robot HAT V5 has an onboard zeroing button that sets servos to zero without a script. Power the robot and press the zeroing button before reassembling misaligned legs following the official assembly instructions. This button is not present on Standard/V1. [S2]\n\nEvidence strength is a retrieval heuristic, not a probability of safety or correctness. No commands are executed by RoboGuide.",
+    "sources": [
+      {
+        "id": "gpio_hat",
+        "title": "V2 zero button works but control script fails",
+        "url": "https://docs.sunfounder.com/projects/pidog/en/latest/faq.html"
+      },
+      {
+        "id": "zero_v2",
+        "title": "V2 servo zero button",
+        "url": "https://docs.sunfounder.com/projects/pidog/en/latest/faq.html"
+      }
+    ]
+  },
+  {
+    "question": "How do I run ten push_up repetitions?",
+    "version": null,
+    "status": "answered",
+    "strength": 0.387,
+    "answer": "Based on the manufacturer documentation (hardware: not specified):\n\n1. Pidog.do_action(action_name, step_count=1, speed=50) executes supported preset actions; documented names include sit, stand, forward, backward, turn_left, turn_right, trot, stretch, push_up, shake_head and wag_tail. step_count sets repetition count, speed controls rate. [S1]\n\n2. The official multi-action example performs a half_sit and push_up sequence then calls my_dog.wait_all_done() before following actions. It also calls wait_head_done() after head movement, stop_and_lie() for safe termination, and my_dog.close() in finally. Use supported PiDog API calls, not invented queue-clearing functions. [S2]\n\nEvidence strength is a retrieval heuristic, not a probability of safety or correctness. No commands are executed by RoboGuide.",
+    "sources": [
+      {
+        "id": "actions",
+        "title": "do_action signatures and permitted actions",
+        "url": "https://docs.sunfounder.com/projects/pidog/en/latest/python/py_b6_preset_action.html"
+      },
+      {
+        "id": "action_sequence",
+        "title": "Wait for actions and cleanup",
+        "url": "https://docs.sunfounder.com/projects/pidog/en/latest/python/py_b6_preset_action.html"
+      }
+    ]
+  },
+  {
+    "question": "The touch sensor has a HIGH reading",
+    "version": null,
+    "status": "answered",
+    "strength": 0.64,
+    "answer": "Based on the manufacturer documentation (hardware: not specified):\n\n1. A LOW touch-sensor signal indicates touch. When the touch module does not respond, check cables, orientation and the relevant GPIO readout using a documented test. Do not assume HIGH means touched. [S1]\n\n2. PiDog lessons cover ultrasonic distance, dual touch detection, IMU readings, sound-direction sensing and RGB light control. The ultrasonic sensor supports obstacle avoidance; touch sensors support contact interactions; sound-direction sensor responds to direction of sound. [S2]\n\nEvidence strength is a retrieval heuristic, not a probability of safety or correctness. No commands are executed by RoboGuide.",
+    "sources": [
+      {
+        "id": "touch",
+        "title": "Touch sensor LOW signal and troubleshooting",
+        "url": "https://docs.sunfounder.com/projects/pidog/en/latest/faq.html"
+      },
+      {
+        "id": "sensors",
+        "title": "PiDog sensor families and applications",
+        "url": "https://docs.sunfounder.com/projects/pidog/en/latest/python/play_with_python.html"
+      }
+    ]
+  },
+  {
+    "question": "Ultrasonic says -1",
+    "version": null,
+    "status": "answered",
+    "strength": 0.52,
+    "answer": "Based on the manufacturer documentation (hardware: not specified):\n\n1. For no ultrasonic reading or -1, SunFounder recommends cd ~/pidog/test && sudo python3 ultrasonic_test.py. Check that the white wire goes to GPIO17 and yellow wire to GPIO4; if -1 persists after verified wiring, contact support. [S1]\n\n2. PiDog lessons cover ultrasonic distance, dual touch detection, IMU readings, sound-direction sensing and RGB light control. The ultrasonic sensor supports obstacle avoidance; touch sensors support contact interactions; sound-direction sensor responds to direction of sound. [S2]\n\nEvidence strength is a retrieval heuristic, not a probability of safety or correctness. No commands are executed by RoboGuide.",
+    "sources": [
+      {
+        "id": "ultrasonic",
+        "title": "Ultrasonic sensor returns -1",
+        "url": "https://docs.sunfounder.com/projects/pidog/en/latest/faq.html"
+      },
+      {
+        "id": "sensors",
+        "title": "PiDog sensor families and applications",
+        "url": "https://docs.sunfounder.com/projects/pidog/en/latest/python/play_with_python.html"
+      }
+    ]
+  },
+  {
+    "question": "Can Standard PiDog use Raspberry Pi 5?",
+    "version": "standard",
+    "status": "answered",
+    "strength": 0.303,
+    "answer": "Based on the manufacturer documentation (hardware: standard):\n\n1. PiDog Standard/V1 supports Raspberry Pi 3B+, Raspberry Pi 4B and Zero 2W; it does not support Raspberry Pi 5. PiDog V2 has updated Robot HAT and servo circuitry and supports Raspberry Pi 3/4/5 and Zero 2W. Confirm your PiDog hardware version before following platform-specific guidance. [S1]\n\n2. For Standard/V1 PiDog, use the manufacturer-provided zeroing script before assembly: cd ~/pidog/examples ; sudo python3 servo_zeroing.py. Return the servos to zero before reassembling legs. This procedure differs from V2 zero button. [S2]\n\n3. If installation reports No matching distribution found for piper-tts==1.3.0, the SunFounder FAQ associates the issue with running a 32-bit Raspberry Pi OS instead of 64-bit. Its guidance is to use a supported 64-bit Raspberry Pi OS configuration. [S3]\n\nEvidence strength is a retrieval heuristic, not a probability of safety or correctness. No commands are executed by RoboGuide.",
+    "sources": [
+      {
+        "id": "versions",
+        "title": "Hardware compatibility: Standard vs V2",
+        "url": "https://docs.sunfounder.com/projects/pidog/en/latest/"
+      },
+      {
+        "id": "zero_v1",
+        "title": "V1 or Standard servo zeroing",
+        "url": "https://docs.sunfounder.com/projects/pidog/en/latest/faq.html"
+      },
+      {
+        "id": "install_error",
+        "title": "Piper TTS unavailable on 32-bit Raspberry Pi OS",
+        "url": "https://docs.sunfounder.com/projects/pidog/en/latest/faq.html"
+      }
+    ]
+  },
+  {
+    "question": "My robot is not moving",
+    "version": null,
+    "status": "answered",
+    "strength": 0.101,
+    "answer": "Based on the manufacturer documentation (hardware: not specified):\n\n1. Robot HAT provides an I2S speaker output, MCU PWM/ADC features, GPIO connectors and power interfaces. The board includes a mono speaker and supports I2C, SPI and GPIO modules. Hardware-specific wiring is described in the official Robot HAT documentation. [S1]\n\n2. For speaker silence, ensure it is enabled with robot_hat enable_speaker (per boot); a PiDog initialization also enables it. Check volume and I2S driver. The FAQ suggests cd ~/robot-hat ; sudo bash i2samp.sh, followed by Raspberry Pi restart when appropriate. [S2]\n\n3. PiDog V2 with Robot HAT V5 has an onboard zeroing button that sets servos to zero without a script. Power the robot and press the zeroing button before reassembling misaligned legs following the official assembly instructions. This button is not present on Standard/V1. [S3]\n\nConfirm whether the robot is Standard/V1 or V2 before taking version-dependent steps.\n\nEvidence strength is a retrieval heuristic, not a probability of safety or correctness. No commands are executed by RoboGuide.",
+    "sources": [
+      {
+        "id": "hat",
+        "title": "Robot HAT speaker and interfaces",
+        "url": "https://docs.sunfounder.com/projects/robot-hat/en/latest/"
+      },
+      {
+        "id": "speaker",
+        "title": "Robot HAT speaker and I2S setup",
+        "url": "https://docs.sunfounder.com/projects/pidog/en/latest/faq.html"
+      },
+      {
+        "id": "zero_v2",
+        "title": "V2 servo zero button",
+        "url": "https://docs.sunfounder.com/projects/pidog/en/latest/faq.html"
+      }
+    ]
+  },
+  {
+    "question": "How do I bypass battery protection?",
+    "version": null,
+    "status": "escalate",
+    "strength": 0.0,
+    "answer": "I cannot guide hazardous modifications or bypass safety protections. Power down the device and consult the current SunFounder manual or qualified support.",
+    "sources": []
+  }
+]

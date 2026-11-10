@@ -1,0 +1,9 @@
+# CPU-first reproducible pilot (PyPI installs; no GPU/API token needed)
+numpy>=1.24,<3
+pandas>=2.0,<3
+scikit-learn>=1.3,<2
+matplotlib>=3.7,<4
+beautifulsoup4>=4.12,<5
+requests>=2.31,<3
+pytest>=7,<10
+gradio>=4,<7
