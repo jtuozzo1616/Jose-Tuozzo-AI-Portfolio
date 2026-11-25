@@ -18,7 +18,7 @@ jobs:
         run: |
           python - <<'PY'
           import json,time,urllib.request
-          runs=[45692010672,45691589311]
+          runs=[45692306074,45692154398]
           for attempt in range(24):
               statuses=[]
               for run in runs:
