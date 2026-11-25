@@ -14,25 +14,11 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
-      - name: Wait for the exact final verification runs (bounded)
-        run: |
-          python - <<'PY'
-          import json,time,urllib.request
-          runs=[45692306074,45692154398]
-          for attempt in range(24):
-              statuses=[]
-              for run in runs:
-                  u=f"https://api.github.com/repos/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System/actions/runs/{run}"
-                  with urllib.request.urlopen(u,timeout=15) as response:
-                      v=json.load(response)
-                  statuses.append((run,v["status"],v["conclusion"]))
-              print(statuses,flush=True)
-              if all(x[1]=="completed" for x in statuses):break
-              time.sleep(15)
-          PY
       - name: Mirror complete final project
         run: |
           git clone --depth=1 https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System.git "$RUNNER_TEMP/newsbot"
+          test "$(git -C "$RUNNER_TEMP/newsbot" rev-parse HEAD)" = "476cc2311fffb2f567e55dc9682cc4f6c38a6fb0"
+          test "$(git -C "$RUNNER_TEMP/newsbot" hash-object final-newsbot-2.0/evidence/NewsBot_JoseT_2_0_Master_Colab.ipynb)" = "fbb7dcbeafe9f83d5d3dc18d6ca17b8e81cc665a"
           mkdir -p ITAI2373-NewsBot-Final
           rsync -a --delete --exclude '.git' --exclude 'bbc_demo_private.jsonl' "$RUNNER_TEMP/newsbot/final-newsbot-2.0/" ITAI2373-NewsBot-Final/
           echo "Canonical source: https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System" > ITAI2373-NewsBot-Final/SOURCE_REVISION.md
