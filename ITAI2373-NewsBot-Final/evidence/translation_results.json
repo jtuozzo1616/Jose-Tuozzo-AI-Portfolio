@@ -1,0 +1,31 @@
+{
+  "pack": "Spanish → English",
+  "source": "es",
+  "target": "en",
+  "translations": [
+    {
+      "source": "La universidad investiga inteligencia artificial.",
+      "status": "ok",
+      "translated_text": "The university investigates artificial intelligence.",
+      "provider": "argos-local",
+      "caveat": "Check translations of names and quotes"
+    },
+    {
+      "source": "El equipo de robótica probó sensores y cámaras.",
+      "status": "ok",
+      "translated_text": "The robotics team tested sensors and cameras.",
+      "provider": "argos-local",
+      "caveat": "Check translations of names and quotes"
+    },
+    {
+      "source": "Los periodistas verificaron las fuentes antes de publicar la noticia.",
+      "status": "ok",
+      "translated_text": "The journalists checked the sources before they published the news.",
+      "provider": "argos-local",
+      "caveat": "Check translations of names and quotes"
+    }
+  ],
+  "scope": "Actual machine translations; not human-rated translation accuracy.",
+  "elapsed_seconds": 18.15,
+  "commit": "34334694ae29bff477b8c43462b14ad8a3077ddd"
+}

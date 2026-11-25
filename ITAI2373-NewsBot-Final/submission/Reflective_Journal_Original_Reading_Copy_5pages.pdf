@@ -1,0 +1,288 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 5 /Kids [7 0 R 9 0 R 11 0 R 13 0 R 15 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Length 5104 >>
+stream
+0.04 0.25 0.33 rg 0 740 612 52 re f
+1 1 1 rg BT /F2 12 Tf 1 0 0 1 48 765 Tm (NEWSBOT INTELLIGENCE SYSTEM 2.0  /  ITAI 2373) Tj ET
+0.81 0.92 0.94 rg BT /F1 9 Tf 1 0 0 1 48 750 Tm (Reflective journal / student-supplied reading copy) Tj ET
+0.09 0.60 0.59 rg 48 725 516 3 re f
+0.04 0.37 0.39 rg BT /F2 11.6 Tf 1 0 0 1 48 708 Tm (Reflective Journal Final Project \226 NewsBot Intelligence System 2.0) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 676.8 Tm (Student: Jos\351 Miguel Tuozzo Izaguirre) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 645.5999999999999 Tm (Date: 25th November 2026) Tj ET
+0.04 0.37 0.39 rg BT /F2 11.6 Tf 1 0 0 1 48 614.3999999999999 Tm (Reflection on the Design and Development) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 598.7999999999998 Tm (One of the key takeaways from the NewsBot Intelligence System 2.0 is that accuracy is only) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 583.1999999999998 Tm (one aspect of a good NLP system. The mid project was all about classification using the) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 567.5999999999998 Tm (historical) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 551.9999999999998 Tm (BBC data set. The final project then built on that by adding in information retrieval,) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 536.3999999999997 Tm (multilingual) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 520.7999999999997 Tm (capability, conversational ability and the ability to generate evidence based responses.) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 505.1999999999997 Tm (This change has introduced problems that standard classification metrics are not really set) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 489.5999999999997 Tm (up) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 473.99999999999966 Tm (to deal with. A classifier can be absolutely correct in its classification of an article) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 458.39999999999964 Tm (and yet the) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 442.7999999999996 Tm (retrieval system will have utterly failed to retrieve anything relevant. The same applies) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 427.1999999999996 Tm (to a) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 411.59999999999957 Tm (conversational response which can be perfectly plausible, perfectly convincing in its) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 395.99999999999955 Tm (content and) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 380.3999999999995 Tm (yet contain absolutely zero supporting evidence.) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 364.7999999999995 Tm (The project actually changed my view of AI completely in that you can't just look at the) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 349.1999999999995 Tm (individual algorithms and say that's the end of the story. The effectiveness of an) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 333.59999999999945 Tm (intelligent) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 317.99999999999943 Tm (application is a function of how all the various bits of the system work together.) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 302.3999999999994 Tm (Architecture, data) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 286.7999999999994 Tm (quality, compute, error handling etc are all absolutely critical to the reliability of the) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 271.19999999999936 Tm (system.) Tj ET
+0.04 0.37 0.39 rg BT /F2 11.6 Tf 1 0 0 1 48 239.99999999999937 Tm (Critical Interpretation of Results) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 224.39999999999938 Tm (The synthetic evaluation demonstrates why good performance on a historical classification) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 208.7999999999994 Tm (task doesn't necessarily mean you'll perform well in a new domain. The very poor recall in) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 193.1999999999994 Tm (the) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 177.5999999999994 Tm (business and entertainment categories is a clear example of a limitation which a simple) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 161.9999999999994 Tm (overall) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 146.3999999999994 Tm (accuracy figure would completely obscure.) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 130.79999999999941 Tm (This is very much the case in the world of journalism where the lexicon is in a state of) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 115.19999999999942 Tm (constant) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 99.59999999999943 Tm (flux. New technologies, new economies, new cultures and new politics all bring in new terms) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 83.99999999999943 Tm (which may not be properly represented in the historical training data.) Tj ET
+0.80 0.84 0.86 RG 48 36 m 564 36 l S
+0.35 0.42 0.48 rg BT /F1 8 Tf 1 0 0 1 48 22 Tm (Houston Community College  |  Final capstone  |  November 2026) Tj ET
+0.35 0.42 0.48 rg BT /F2 8 Tf 1 0 0 1 535 22 Tm (1/5) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Length 6872 >>
+stream
+0.04 0.25 0.33 rg 0 740 612 52 re f
+1 1 1 rg BT /F2 12 Tf 1 0 0 1 48 765 Tm (NEWSBOT INTELLIGENCE SYSTEM 2.0  /  ITAI 2373) Tj ET
+0.81 0.92 0.94 rg BT /F1 9 Tf 1 0 0 1 48 750 Tm (Reflective journal / student-supplied reading copy) Tj ET
+0.09 0.60 0.59 rg 48 725 516 3 re f
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 708 Tm (Another problem is with the multilingual vocabulary probes. The questions that are selected) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 693.8510638297872 Tm (are such as to favour terms which are already in the dictionary. So a positive result gives) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 679.7021276595744 Tm (you some) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 665.5531914893617 Tm (initial indication of functionality rather than being in any way a convincing demonstration) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 651.4042553191489 Tm (of true) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 637.2553191489361 Tm (multilingual generalization.) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 623.1063829787233 Tm (A more rigorous experimental design would be to have independently constructed test) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 608.9574468085106 Tm (questions, real articles from a range of publishers, documents in a variety of languages) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 594.8085106382978 Tm (and from) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 580.659574468085 Tm (different time periods. The evaluation would be on the macro-F1, per category precision and) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 566.5106382978722 Tm (recall,) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 552.3617021276594 Tm (confusion matrices and a full error analysis.) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 538.2127659574467 Tm (The key point is that getting good results and demonstrating scientific validity are two) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 524.0638297872339 Tm (very) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 509.9148936170211 Tm (different things. A proper assessment is one which looks at the weaknesses as much as the) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 495.76595744680833 Tm (successful predictions.) Tj ET
+0.04 0.37 0.39 rg BT /F2 11.353191489361702 Tf 1 0 0 1 48 467.4680851063828 Tm (Engineering Trade-offs and Technical Decisions) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 453.31914893617 Tm (The extractive response mechanism is a big compromise between computational efficiency,) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 439.1702127659572 Tm (transparency and linguistic flexibility. The response is constructed from the retrieved) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 425.02127659574444 Tm (passages so) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 410.87234042553166 Tm (there's no opportunity to inject any unsupported information. It operates in a CPU) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 396.7234042553189 Tm (environment.) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 382.5744680851061 Tm (Extractive approaches are still very much the limit when it comes to answering questions) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 368.4255319148933 Tm (that) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 354.27659574468055 Tm (require some form of comparative reasoning, contextual interpretation or synthesis across) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 340.12765957446777 Tm (multiple) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 325.978723404255 Tm (documents. You can still get a passage that is relevant but which doesn't actually answer) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 311.8297872340422 Tm (the) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 297.68085106382944 Tm (question.) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 283.53191489361666 Tm (The dictionary based language pivot is much the same trade-off really. It's very simple,) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 269.3829787234039 Tm (very) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 255.2340425531911 Tm (cheap in terms of compute and fairly easy to understand. The downside is that it's) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 241.08510638297832 Tm (completely) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 226.93617021276555 Tm (reliant on the dictionary and so won't cope with synonyms, idioms, contextual ambiguity or) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 212.78723404255277 Tm (out of) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 198.63829787234 Tm (vocabulary items.) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 184.4893617021272 Tm (Retrieval confidence is another major issue. A high similarity score in no way guarantees) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 170.34042553191443 Tm (that) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 156.19148936170166 Tm (the information is correct. The system has to be able to distinguish between finding) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 142.04255319148888 Tm (something that) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 127.89361702127611 Tm (may be relevant and having sufficient confidence to conclude that a fact is true.) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 113.74468085106335 Tm (In certain circumstances it may in fact be the right thing to do to ask for clarification) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 99.59574468085059 Tm (or to) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 85.44680851063782 Tm (acknowledge that you simply don't have enough evidence to form an opinion.) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 71.29787234042506 Tm (These decisions reassert the principle that technological complexity should be justified by) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.753191489361702 Tf 1 0 0 1 48 57.148936170212295 Tm (tangible benefits rather than just presumed to be good.) Tj ET
+0.80 0.84 0.86 RG 48 36 m 564 36 l S
+0.35 0.42 0.48 rg BT /F1 8 Tf 1 0 0 1 48 22 Tm (Houston Community College  |  Final capstone  |  November 2026) Tj ET
+0.35 0.42 0.48 rg BT /F2 8 Tf 1 0 0 1 535 22 Tm (2/5) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 8 0 R >>
+endobj
+10 0 obj
+<< /Length 5526 >>
+stream
+0.04 0.25 0.33 rg 0 740 612 52 re f
+1 1 1 rg BT /F2 12 Tf 1 0 0 1 48 765 Tm (NEWSBOT INTELLIGENCE SYSTEM 2.0  /  ITAI 2373) Tj ET
+0.81 0.92 0.94 rg BT /F1 9 Tf 1 0 0 1 48 750 Tm (Reflective journal / student-supplied reading copy) Tj ET
+0.09 0.60 0.59 rg 48 725 516 3 re f
+0.04 0.37 0.39 rg BT /F2 11.6 Tf 1 0 0 1 48 708 Tm (Ethical Responsibility and Information Reliability) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 692.4 Tm (Developing an NLP system to process news comes with a whole set of responsibilities that go) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 676.8 Tm (far beyond the technical performance of the system. The classification and retrieval) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 661.1999999999999 Tm (systems we) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 645.5999999999999 Tm (build will determine what the user sees and how they come to understand it.) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 629.9999999999999 Tm (Historical datasets will of course reflect the editorial policies, cultural biases and) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 614.3999999999999 Tm (institutional) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 598.7999999999998 Tm (viewpoints of their time. A classifier that is technically accurate is therefore simply) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 583.1999999999998 Tm (reproducing) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 567.5999999999998 Tm (the very limitations of the data it was trained on.) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 551.9999999999998 Tm (Source citations add to the transparency of a piece by allowing the reader to go and check) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 536.3999999999997 Tm (the) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 520.7999999999997 Tm (source for themselves. That said, citing a document in no way ensures that the document is) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 505.1999999999997 Tm (right,) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 489.5999999999997 Tm (is current or indeed is objective.) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 473.99999999999966 Tm (An intelligent news system should be able to distinguish between the facts that are on the) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 458.39999999999964 Tm (record, the interpretations, the uncertain conclusions and the conflicting evidence. Its) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 442.7999999999996 Tm (role should) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 427.1999999999996 Tm (be to assist and support critical human judgement rather than simply allow you to go with) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 411.59999999999957 Tm (the) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 395.99999999999955 Tm (machine's answer.) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 380.3999999999995 Tm (Production deployment would also require a bit more attention to dependency security, input) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 364.7999999999995 Tm (validation, privacy and potentially misleading or adversarial documents.) Tj ET
+0.04 0.37 0.39 rg BT /F2 11.6 Tf 1 0 0 1 48 333.59999999999945 Tm (Personal Learning and Future Improvements) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 317.99999999999943 Tm (This project has actually gone a long way to deepen my understanding of the interaction) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 302.3999999999994 Tm (between NLP, ML, information retrieval and software engineering.) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 286.7999999999994 Tm (Perhaps the single most important intellectual lesson of all is that recognising your own) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 271.19999999999936 Tm (limitations is not in any way a sign of failure in the development process. It's actually a) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 255.59999999999937 Tm (crucial) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 239.99999999999937 Tm (step in the development of more robust, more scientifically valid systems.) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 224.39999999999938 Tm (Future work should be on controlled feature ablation and multilingual domain shift) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 208.7999999999994 Tm (experiments. A good way to assess the actual contribution of the various feature) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 193.1999999999994 Tm (representations) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 177.5999999999994 Tm (would be to compare them under the same experimental conditions. A good way to assess) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 161.9999999999994 Tm (linguistic) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 146.3999999999994 Tm (generalisation would be to do the experiment on previously unseen multilingual questions.) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 130.79999999999941 Tm (Other potential improvements would be semantic embeddings, hybrid retrieval, confidence) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 115.19999999999942 Tm (calibration, much more extensive documentation of the various failure modes and automated) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 99.59999999999943 Tm (integration testing.) Tj ET
+0.80 0.84 0.86 RG 48 36 m 564 36 l S
+0.35 0.42 0.48 rg BT /F1 8 Tf 1 0 0 1 48 22 Tm (Houston Community College  |  Final capstone  |  November 2026) Tj ET
+0.35 0.42 0.48 rg BT /F2 8 Tf 1 0 0 1 535 22 Tm (3/5) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 10 0 R >>
+endobj
+12 0 obj
+<< /Length 6538 >>
+stream
+0.04 0.25 0.33 rg 0 740 612 52 re f
+1 1 1 rg BT /F2 12 Tf 1 0 0 1 48 765 Tm (NEWSBOT INTELLIGENCE SYSTEM 2.0  /  ITAI 2373) Tj ET
+0.81 0.92 0.94 rg BT /F1 9 Tf 1 0 0 1 48 750 Tm (Reflective journal / student-supplied reading copy) Tj ET
+0.09 0.60 0.59 rg 48 725 516 3 re f
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 708 Tm (Rather than just waltzing in and introducing the new technology because it's new and it's) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 693.5434782608696 Tm (more) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 679.0869565217392 Tm (sophisticated, future decisions should be based on reproducible experiments and clear) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 664.6304347826089 Tm (performance) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 650.1739130434785 Tm (criteria.) Tj ET
+0.04 0.37 0.39 rg BT /F2 11.58695652173913 Tf 1 0 0 1 48 621.2608695652177 Tm (Personal Verification and Contributions) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 606.8043478260873 Tm (Individual contributions should properly reflect the programming, the experimentation, the) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 592.347826086957 Tm (documentation, the technical decisions and the evaluation that each individual has actually) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 577.8913043478266 Tm (done.) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 563.4347826086962 Tm (The claims made in the experimental section should be in line with the repo, the execution) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 548.9782608695658 Tm (records) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 534.5217391304354 Tm (and the actual behaviour of the system.) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 520.065217391305 Tm (Individual contribution: I did the full development of NewsBot Intelligence System 2.0.) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 505.6086956521746 Tm (That was me from the initial project planning through to the system architecture, data pre-) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 491.1521739130442 Tm (processing, feature engineering, model implementation, information retrieval, multilingual) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 476.69565217391374 Tm (capability, conversational response, testing, error analysis, technical documentation and) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 462.2391304347833 Tm (the) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 447.78260869565287 Tm (GitHub repo structure. I put together the final deliverables and then did the assessment of) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 433.32608695652243 Tm (the) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 418.869565217392 Tm (system in terms of what it did well, what it didn't do so well and what the potential for) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 404.41304347826156 Tm (improvement) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 389.9565217391311 Tm (was.) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 375.5000000000007 Tm (Team contribution: The project was run under the JoseGroup banner but I took full) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 361.04347826087024 Tm (responsibility for all the technical, analytical and documentation aspects of the project.) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 346.5869565217398 Tm (The) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 332.13043478260937 Tm (implementation, the experiments, the architecture, the final submission etc. were all my) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 317.67391304347893 Tm (doing. So) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 303.2173913043485 Tm (the individual contribution is the full contribution of the project as presented in the) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 288.76086956521806 Tm (NewsBot) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 274.3043478260876 Tm (Intelligence System 2.0.) Tj ET
+0.04 0.37 0.39 rg BT /F2 11.58695652173913 Tf 1 0 0 1 48 245.39130434782675 Tm (Conclusion) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 230.9347826086963 Tm (NewsBot Intelligence System 2.0 is a very good demonstration that building AI is far more) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 216.47826086956587 Tm (than just training a model and getting good eval scores. It's about being able to think,) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 202.02173913043544 Tm (it's about) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 187.565217391305 Tm (having the discipline to do experiments, it's about having the sense of responsibility of) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 173.10869565217456 Tm (being an) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 158.65217391304412 Tm (engineer and it's about having a good grasp of the limitations of automated information) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 144.1956521739137 Tm (processing.) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 129.73913043478325 Tm (The big win from this project has been a far more mature understanding of what an) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 115.28260869565281 Tm (intelligent) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 100.82608695652237 Tm (and reliable system is. The quality of the system has to be judged not just on its ability) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 86.36956521739194 Tm (to answer) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 71.9130434782615 Tm (questions, but on its ability to acknowledge when it doesn't know something, to communicate) Tj ET
+0.12 0.17 0.23 rg BT /F1 10.986956521739131 Tf 1 0 0 1 48 57.45652173913106 Tm (its) Tj ET
+0.80 0.84 0.86 RG 48 36 m 564 36 l S
+0.35 0.42 0.48 rg BT /F1 8 Tf 1 0 0 1 48 22 Tm (Houston Community College  |  Final capstone  |  November 2026) Tj ET
+0.35 0.42 0.48 rg BT /F2 8 Tf 1 0 0 1 535 22 Tm (4/5) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 12 0 R >>
+endobj
+14 0 obj
+<< /Length 1373 >>
+stream
+0.04 0.25 0.33 rg 0 740 612 52 re f
+1 1 1 rg BT /F2 12 Tf 1 0 0 1 48 765 Tm (NEWSBOT INTELLIGENCE SYSTEM 2.0  /  ITAI 2373) Tj ET
+0.81 0.92 0.94 rg BT /F1 9 Tf 1 0 0 1 48 750 Tm (Reflective journal / student-supplied reading copy) Tj ET
+0.09 0.60 0.59 rg 48 725 516 3 re f
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 708 Tm (own limitations, to be able to provide the supporting evidence and to be able to deal with) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 692.4 Tm (the) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 676.8 Tm (unknown.) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 661.1999999999999 Tm (Ultimately I think responsible AI is about much more than what the system can do. It's) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 645.5999999999999 Tm (about) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 629.9999999999999 Tm (how rigorously you can assess, validate and justify what it can do. That's the principle) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 614.3999999999999 Tm (that will) Tj ET
+0.12 0.17 0.23 rg BT /F1 11 Tf 1 0 0 1 48 598.7999999999998 Tm (form the basis of my academic and professional work in AI.) Tj ET
+0.80 0.84 0.86 RG 48 36 m 564 36 l S
+0.35 0.42 0.48 rg BT /F1 8 Tf 1 0 0 1 48 22 Tm (Houston Community College  |  Final capstone  |  November 2026) Tj ET
+0.35 0.42 0.48 rg BT /F2 8 Tf 1 0 0 1 535 22 Tm (5/5) Tj ET
+endstream
+endobj
+15 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 14 0 R >>
+endobj
+xref
+0 16
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000142 00000 n 
+0000000239 00000 n 
+0000000341 00000 n 
+0000000436 00000 n 
+0000005591 00000 n 
+0000005737 00000 n 
+0000012660 00000 n 
+0000012806 00000 n 
+0000018384 00000 n 
+0000018532 00000 n 
+0000025122 00000 n 
+0000025270 00000 n 
+0000026695 00000 n 
+trailer
+<< /Size 16 /Root 1 0 R >>
+startxref
+26843
+%%EOF

@@ -1,0 +1,35 @@
+"""Real Chromium browser smoke test and screenshots; no mock images."""
+from pathlib import Path
+from playwright.sync_api import sync_playwright, expect
+import json, os, time
+out=Path(__file__).resolve().parent/'evidence'/'screenshots'
+out.mkdir(parents=True,exist_ok=True)
+log=[]
+with sync_playwright() as p:
+    browser=p.chromium.launch(headless=True)
+    page=browser.new_page(viewport={'width':1440,'height':1000},device_scale_factor=1)
+    page.goto('http://127.0.0.1:8501',wait_until='domcontentloaded')
+    expect(page.get_by_text('Corpus intelligence at a glance',exact=True)).to_be_visible(timeout=90000)
+    def capture(name,heading):
+        expect(page.get_by_text(heading,exact=True)).to_be_visible(timeout=30000)
+        expect(page.get_by_test_id('stException')).to_have_count(0)
+        page.wait_for_timeout(1200)
+        page.screenshot(path=str(out/(name+'.png')),full_page=True)
+        log.append({'screen':name,'heading':heading,'status':'passed'})
+    capture('01-command-center','Corpus intelligence at a glance')
+    page.get_by_role('tab',name='Article Lab',exact=False).click()
+    capture('02-article-lab','Multi-layer content analysis')
+    page.get_by_role('tab',name='Search & Languages',exact=False).click()
+    capture('03-search-languages','Cross-language evidence discovery')
+    page.get_by_role('tab',name='Grounded Chat',exact=False).click()
+    page.get_by_placeholder('What did the robotics team measure?').fill('What did the AI chip researchers measure?')
+    page.get_by_role('button',name='Ask NewsBot').click()
+    expect(page.get_by_text('Sources:',exact=False)).to_be_visible(timeout=30000)
+    capture('04-grounded-chat','Ask the corpus — answers with article IDs')
+    page.get_by_role('tab',name='Research Lab',exact=False).click()
+    page.get_by_role('button',name='Run stratified cross-validation on loaded labels').click()
+    expect(page.get_by_text('If these documents are synthetic',exact=False)).to_be_visible(timeout=30000)
+    capture('05-research-lab','Topic modeling and transparent evaluation')
+    browser.close()
+(out.parent/'browser_results.json').write_text(json.dumps({'status':'passed','screens':log,'commit':os.getenv('GITHUB_SHA','local')},indent=2))
+print('BROWSER VERIFIED',len(log),'screens')

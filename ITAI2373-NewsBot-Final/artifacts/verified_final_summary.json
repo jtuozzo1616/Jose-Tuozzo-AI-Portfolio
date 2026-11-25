@@ -1,0 +1,44 @@
+{
+  "source": "GitHub Actions verified log",
+  "run_id": 45679903622,
+  "run_url": "https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System/actions/runs/45679903622",
+  "tested_commit": "572edc9e6d9ac9c50f2d70315f57712e1e09d9c8",
+  "tests": {
+    "passed": 27,
+    "warnings": 1
+  },
+  "synthetic_classification": {
+    "n": 30,
+    "folds": 3,
+    "word_baseline": {
+      "accuracy": 0.5666666666666667,
+      "macro_f1": 0.5370862470862471
+    },
+    "pivot": {
+      "accuracy": 0.6,
+      "macro_f1": 0.5719780219780219
+    },
+    "pivot_char": {
+      "accuracy": 0.6666666666666666,
+      "macro_f1": 0.6142857142857143
+    }
+  },
+  "synthetic_retrieval": {
+    "n": 24,
+    "k": 3,
+    "pivot_mrr": 1,
+    "naive_mrr": 0.625,
+    "pivot_recall": 1,
+    "naive_recall": 0.625
+  },
+  "historical_midterm": {
+    "n": 288,
+    "accuracy": 0.9618,
+    "macro_f1": 0.9605,
+    "source": "outputs/holdout_metrics.json"
+  },
+  "limitations": [
+    "Fictional corpus; controlled probes constructed with corpus knowledge; no external generalization claim",
+    "Historical BBC metric is separate from final research"
+  ]
+}

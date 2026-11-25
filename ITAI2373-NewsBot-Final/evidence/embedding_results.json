@@ -1,0 +1,138 @@
+{
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "method": "multilingual-embeddings:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "dimension": 384,
+  "sentences": [
+    "The university studies artificial intelligence.",
+    "La universidad investiga inteligencia artificial.",
+    "Die Universität erforscht künstliche Intelligenz.",
+    "The football team won the championship."
+  ],
+  "cosine_similarity": [
+    [
+      1.0,
+      0.9745200276374817,
+      0.963450014591217,
+      0.02119000069797039
+    ],
+    [
+      0.9745200276374817,
+      1.0,
+      0.9779499769210815,
+      -0.00686000008136034
+    ],
+    [
+      0.963450014591217,
+      0.9779499769210815,
+      1.0,
+      0.015610000118613243
+    ],
+    [
+      0.02119000069797039,
+      -0.00686000008136034,
+      0.015610000118613243,
+      1.0
+    ]
+  ],
+  "embedding_retrieval": {
+    "queries": 4,
+    "recall_at_k": 1.0,
+    "mrr_at_k": 0.75,
+    "retrieval_method": "multilingual-embeddings:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "evaluation_type": "hand-authored synthetic retrieval probes",
+    "details": [
+      {
+        "query": "¿Qué sensores ayudan al robot a desplazarse?",
+        "expected": "demo-tech-2",
+        "top_k": [
+          "demo-tech-6",
+          "demo-tech-2",
+          "demo-tech-1"
+        ],
+        "reciprocal_rank": 0.5
+      },
+      {
+        "query": "Welche Kameras helfen bei der Roboternavigation?",
+        "expected": "demo-tech-2",
+        "top_k": [
+          "demo-tech-6",
+          "demo-tech-2",
+          "demo-tech-5"
+        ],
+        "reciprocal_rank": 0.5
+      },
+      {
+        "query": "Quel film est présenté au festival de cinéma ?",
+        "expected": "demo-entertainment-6",
+        "top_k": [
+          "demo-entertainment-6",
+          "demo-entertainment-1",
+          "demo-entertainment-5"
+        ],
+        "reciprocal_rank": 1.0
+      },
+      {
+        "query": "What did the AI chip researchers measure?",
+        "expected": "demo-tech-1",
+        "top_k": [
+          "demo-tech-1",
+          "demo-tech-6",
+          "demo-tech-2"
+        ],
+        "reciprocal_rank": 1.0
+      }
+    ]
+  },
+  "lexical_retrieval": {
+    "queries": 4,
+    "recall_at_k": 0.75,
+    "mrr_at_k": 0.625,
+    "retrieval_method": "tfidf-pivot",
+    "evaluation_type": "hand-authored synthetic retrieval probes",
+    "details": [
+      {
+        "query": "¿Qué sensores ayudan al robot a desplazarse?",
+        "expected": "demo-tech-2",
+        "top_k": [
+          "demo-tech-6",
+          "demo-tech-2"
+        ],
+        "reciprocal_rank": 0.5
+      },
+      {
+        "query": "Welche Kameras helfen bei der Roboternavigation?",
+        "expected": "demo-tech-2",
+        "top_k": [
+          "demo-sport-6"
+        ],
+        "reciprocal_rank": 0.0
+      },
+      {
+        "query": "Quel film est présenté au festival de cinéma ?",
+        "expected": "demo-entertainment-6",
+        "top_k": [
+          "demo-entertainment-6",
+          "demo-entertainment-1",
+          "demo-entertainment-5"
+        ],
+        "reciprocal_rank": 1.0
+      },
+      {
+        "query": "What did the AI chip researchers measure?",
+        "expected": "demo-tech-1",
+        "top_k": [
+          "demo-tech-1",
+          "demo-tech-3",
+          "demo-politics-3"
+        ],
+        "reciprocal_rank": 1.0
+      }
+    ]
+  },
+  "scope": "Four deliberately constructed fictional-corpus probes; not independent validation. Similarity is not factual truth.",
+  "versions": {
+    "sentence_transformers": "5.7.0",
+    "argostranslate": "1.11.0"
+  },
+  "commit": "34334694ae29bff477b8c43462b14ad8a3077ddd"
+}

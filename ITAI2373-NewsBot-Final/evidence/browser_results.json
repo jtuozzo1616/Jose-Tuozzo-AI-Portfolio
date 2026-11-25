@@ -1,0 +1,31 @@
+{
+  "status": "passed",
+  "screens": [
+    {
+      "screen": "01-command-center",
+      "heading": "Corpus intelligence at a glance",
+      "status": "passed"
+    },
+    {
+      "screen": "02-article-lab",
+      "heading": "Multi-layer content analysis",
+      "status": "passed"
+    },
+    {
+      "screen": "03-search-languages",
+      "heading": "Cross-language evidence discovery",
+      "status": "passed"
+    },
+    {
+      "screen": "04-grounded-chat",
+      "heading": "Ask the corpus \u2014 answers with article IDs",
+      "status": "passed"
+    },
+    {
+      "screen": "05-research-lab",
+      "heading": "Topic modeling and transparent evaluation",
+      "status": "passed"
+    }
+  ],
+  "commit": "65a645fc7cfd56d9783857a970cfa6519b03642f"
+}

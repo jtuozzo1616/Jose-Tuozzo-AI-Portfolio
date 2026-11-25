@@ -1,0 +1,1 @@
+No API key is required. If adding a provider later, use an environment variable such as NEWSBOT_API_KEY; never commit real credentials.

@@ -1,0 +1,12 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+.env
+*.log
+*.joblib
+.DS_Store
+
+# Private licensed article texts
+/data/raw/*.csv
+/data/raw/*.jsonl

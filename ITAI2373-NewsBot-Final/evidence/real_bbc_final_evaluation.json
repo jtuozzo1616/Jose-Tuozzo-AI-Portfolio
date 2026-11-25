@@ -1,0 +1,275 @@
+{
+  "source": "https://raw.githubusercontent.com/alvinrach/learn-ai-bbc/main/BBC%20News%20Train.csv",
+  "source_sha256": "f56a65dab2ea728505a639d2186a2b2f1c0939f28e8e89b5ed1c1fe9520b1323",
+  "n": 250,
+  "class_counts": {
+    "business": 50,
+    "sport": 50,
+    "politics": 50,
+    "entertainment": 50,
+    "tech": 50
+  },
+  "cv": {
+    "status": "ok",
+    "n_articles": 250,
+    "method": "3-fold stratified out-of-fold prediction",
+    "accuracy": 0.908,
+    "macro_f1": 0.9079,
+    "per_class": {
+      "business": {
+        "precision": 0.9318181818181818,
+        "recall": 0.82,
+        "f1-score": 0.8723404255319149,
+        "support": 50.0
+      },
+      "entertainment": {
+        "precision": 0.9772727272727273,
+        "recall": 0.86,
+        "f1-score": 0.9148936170212766,
+        "support": 50.0
+      },
+      "politics": {
+        "precision": 0.8679245283018868,
+        "recall": 0.92,
+        "f1-score": 0.8932038834951457,
+        "support": 50.0
+      },
+      "sport": {
+        "precision": 0.96,
+        "recall": 0.96,
+        "f1-score": 0.96,
+        "support": 50.0
+      },
+      "tech": {
+        "precision": 0.8305084745762712,
+        "recall": 0.98,
+        "f1-score": 0.8990825688073395,
+        "support": 50.0
+      },
+      "accuracy": 0.908,
+      "macro avg": {
+        "precision": 0.9135047823938134,
+        "recall": 0.908,
+        "f1-score": 0.9079040989711353,
+        "support": 250.0
+      },
+      "weighted avg": {
+        "precision": 0.9135047823938135,
+        "recall": 0.908,
+        "f1-score": 0.9079040989711354,
+        "support": 250.0
+      }
+    },
+    "classes": [
+      "business",
+      "entertainment",
+      "politics",
+      "sport",
+      "tech"
+    ],
+    "confusion_matrix": [
+      [
+        41,
+        0,
+        4,
+        1,
+        4
+      ],
+      [
+        1,
+        43,
+        2,
+        0,
+        4
+      ],
+      [
+        1,
+        0,
+        46,
+        1,
+        2
+      ],
+      [
+        0,
+        1,
+        1,
+        48,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        49
+      ]
+    ],
+    "limitation": "This evaluates the provided corpus only; synthetic fixture scores have no external validity"
+  },
+  "topic_models": {
+    "lda": {
+      "status": "ok",
+      "method": "LDA",
+      "topics": [
+        {
+          "topic_id": 0,
+          "terms": [
+            "said",
+            "year",
+            "growth",
+            "sales",
+            "mr",
+            "economy",
+            "2004",
+            "market"
+          ],
+          "article_count": 45
+        },
+        {
+          "topic_id": 1,
+          "terms": [
+            "film",
+            "best",
+            "said",
+            "won",
+            "year",
+            "star",
+            "actor",
+            "awards"
+          ],
+          "article_count": 38
+        },
+        {
+          "topic_id": 2,
+          "terms": [
+            "said",
+            "mr",
+            "people",
+            "government",
+            "blair",
+            "election",
+            "party",
+            "labour"
+          ],
+          "article_count": 54
+        },
+        {
+          "topic_id": 3,
+          "terms": [
+            "said",
+            "new",
+            "year",
+            "game",
+            "wales",
+            "people",
+            "win",
+            "music"
+          ],
+          "article_count": 65
+        },
+        {
+          "topic_id": 4,
+          "terms": [
+            "said",
+            "new",
+            "mr",
+            "people",
+            "tv",
+            "broadband",
+            "mobile",
+            "uk"
+          ],
+          "article_count": 48
+        }
+      ],
+      "evolution": [],
+      "uninformative_documents": 0,
+      "missing_dates": 250,
+      "trend_status": "insufficient_time_periods",
+      "warning": "Exploratory corpus-specific topics and clusters; no independent ground truth."
+    },
+    "nmf": {
+      "status": "ok",
+      "method": "NMF",
+      "topics": [
+        {
+          "topic_id": 0,
+          "terms": [
+            "broadband",
+            "people",
+            "music",
+            "said",
+            "bt",
+            "mobile",
+            "tv",
+            "net"
+          ],
+          "article_count": 66
+        },
+        {
+          "topic_id": 1,
+          "terms": [
+            "film",
+            "best",
+            "actor",
+            "award",
+            "awards",
+            "star",
+            "won",
+            "festival"
+          ],
+          "article_count": 37
+        },
+        {
+          "topic_id": 2,
+          "terms": [
+            "mr",
+            "blair",
+            "election",
+            "party",
+            "labour",
+            "lib",
+            "said",
+            "government"
+          ],
+          "article_count": 45
+        },
+        {
+          "topic_id": 3,
+          "terms": [
+            "match",
+            "rugby",
+            "final",
+            "win",
+            "cup",
+            "england",
+            "game",
+            "wales"
+          ],
+          "article_count": 58
+        },
+        {
+          "topic_id": 4,
+          "terms": [
+            "economy",
+            "growth",
+            "rates",
+            "bank",
+            "rate",
+            "economic",
+            "year",
+            "said"
+          ],
+          "article_count": 44
+        }
+      ],
+      "evolution": [],
+      "uninformative_documents": 0,
+      "missing_dates": 250,
+      "trend_status": "insufficient_time_periods",
+      "warning": "Exploratory corpus-specific topics and clusters; no independent ground truth."
+    }
+  },
+  "scope": "Balanced historical sample, not contemporary or multilingual validation. No copyrighted article bodies republished. Dates unknown; no fabricated trend data.",
+  "commit": "f9f3edc382123789f05e4b497417dd3552d6af0d"
+}
