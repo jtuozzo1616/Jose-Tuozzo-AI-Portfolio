@@ -1,6 +1,7 @@
 {
-  "source_commit": "41d85f7355d110439333a9e8b9c48ca7dbb78849",
-  "run_id": "45691370037",
+  "source_commit": "25a3e04037b15d855509dc0d4fce2da28426edd3",
+  "run_id": "45691589311",
   "notebook_browser": "success",
-  "neural": "success"
+  "neural": "success",
+  "publication": "recovered from successful job artifacts"
 }

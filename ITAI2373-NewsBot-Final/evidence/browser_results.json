@@ -25,7 +25,17 @@
       "screen": "05-research-lab",
       "heading": "Topic modeling and transparent evaluation",
       "status": "passed"
+    },
+    {
+      "screen": "06-shared-event",
+      "heading": "Cross-language evidence discovery",
+      "status": "passed"
+    },
+    {
+      "screen": "07-temporal-topic-discovery",
+      "heading": "Topic modeling and transparent evaluation",
+      "status": "passed"
     }
   ],
-  "commit": "65a645fc7cfd56d9783857a970cfa6519b03642f"
+  "commit": "25a3e04037b15d855509dc0d4fce2da28426edd3"
 }
