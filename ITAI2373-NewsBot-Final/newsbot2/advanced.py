@@ -112,3 +112,10 @@ def hierarchy(prediction):
 def export_report(payload):
     """JSON report retains sources, filter settings and warnings."""
     return json.dumps(payload,indent=2,ensure_ascii=False)
+
+def compare_event_coverage(articles,event_id):
+    """Compare supplied regional source metadata for a shared event; do not infer culture."""
+    from .analysis import summarize
+    records=[a for a in articles if a.event_id==event_id and event_id]
+    return {'event_id':event_id,'sources':[{'article_id':a.article_id,'language':a.language,'source_region':a.source_region or 'not supplied','title':a.title,'extractive_focus':summarize(a.body,max_sentences=2)['text'],'synthetic':a.synthetic} for a in records],
+            'warning':'Compare stated emphases and context manually. Region is source metadata, not a measure of cultural or political bias. Fictional examples do not describe actual populations.'}

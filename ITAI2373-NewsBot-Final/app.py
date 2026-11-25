@@ -10,7 +10,7 @@ import pandas as pd
 from newsbot2.engine import NewsBotEngine
 from newsbot2.analysis import Classifier
 from newsbot2.io import import_articles
-from newsbot2.advanced import discover_topics,sentiment_timeline,entity_network,language_comparison,structured_query,expand_query,hierarchy,export_report
+from newsbot2.advanced import discover_topics,sentiment_timeline,entity_network,language_comparison,structured_query,expand_query,hierarchy,export_report,compare_event_coverage
 
 st.set_page_config(page_title='NewsBot Intelligence · 2.0',page_icon='🗞️',layout='wide',
                    initial_sidebar_state='expanded')
@@ -69,6 +69,10 @@ with st.sidebar:
         clf=Classifier.from_trusted_joblib(str(trusted)) if trusted.exists() and os.getenv('NEWSBOT_DEMO_ONLY') != '1' else None
         st.session_state.engine=NewsBotEngine(import_articles(ROOT/'data/demo_news.jsonl'),classifier=clf)
         if clf is None:st.session_state.engine.train_local_classifier()
+        st.session_state.chat_history=[]
+        st.rerun()
+    if st.button('Load dated cross-language scenario',use_container_width=True):
+        st.session_state.engine=NewsBotEngine(import_articles(ROOT/'data/demo_timeline.jsonl'))
         st.session_state.chat_history=[]
         st.rerun()
     st.divider()
@@ -168,6 +172,12 @@ with tabs[2]:
             st.caption(f"{hit['source']} | method: {hit['retrieval_method']} | similarity: {hit['score']:.3f} (not probability)")
     with st.expander('Compare language coverage and source context'):
         st.dataframe(pd.DataFrame(language_comparison(eng.articles)),hide_index=True)
+        events=sorted({a.event_id for a in eng.articles if a.event_id})
+        if events:
+            event=st.selectbox('Shared event',events)
+            comparison=compare_event_coverage(eng.articles,event)
+            st.dataframe(pd.DataFrame(comparison['sources']),hide_index=True)
+            st.caption(comparison['warning'])
         st.caption('Language does not establish regional viewpoint; compare actual source context and editorial framing manually.')
     st.divider()
     st.markdown('**Optional fully offline machine translation**')

@@ -30,3 +30,15 @@ def test_multipart_and_filters():
 def test_expansion_and_hierarchy():
     assert 'sensors' in expand_query('robot')['added_terms']
     assert hierarchy({'label':'tech'})['parent_category']=='science and technology'
+
+def test_three_month_scenario_and_event_context():
+    from newsbot2.advanced import compare_event_coverage
+    docs=import_articles(ROOT/'data/demo_timeline.jsonl')
+    assert all(a.synthetic and a.source_region and a.event_id for a in docs)
+    result=discover_topics(docs,3,'lda')
+    assert result['trend_status']=='descriptive'
+    assert len(result['evolution'])==3
+    assert sum(r['documents'] for r in result['evolution'])==len(docs)
+    comparison=compare_event_coverage(docs,'transit-pilot')
+    assert len(comparison['sources'])==4
+    assert len({x['source_region'] for x in comparison['sources']})==4

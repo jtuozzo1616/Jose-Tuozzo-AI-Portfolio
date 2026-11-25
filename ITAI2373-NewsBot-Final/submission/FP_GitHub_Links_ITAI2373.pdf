@@ -1,63 +1,74 @@
 %PDF-1.4
+%“Œ‹ž ReportLab Generated PDF document (opensource)
 1 0 obj
-<< /Type /Catalog /Pages 2 0 R >>
+<<
+/F1 2 0 R /F2 3 0 R
+>>
 endobj
 2 0 obj
-<< /Type /Pages /Count 1 /Kids [7 0 R] >>
+<<
+/BaseFont /Helvetica /Encoding /WinAnsiEncoding /Name /F1 /Subtype /Type1 /Type /Font
+>>
 endobj
 3 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+<<
+/BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding /Name /F2 /Subtype /Type1 /Type /Font
+>>
 endobj
 4 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+<<
+/Contents 8 0 R /MediaBox [ 0 0 612 792 ] /Parent 7 0 R /Resources <<
+/Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
+>> /Rotate 0 /Trans <<
+
+>> 
+  /Type /Page
+>>
 endobj
 5 0 obj
-<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+<<
+/PageMode /UseNone /Pages 7 0 R /Type /Catalog
+>>
 endobj
 6 0 obj
-<< /Length 2588 >>
-stream
-0.04 0.25 0.33 rg 0 740 612 52 re f
-1 1 1 rg BT /F2 12 Tf 1 0 0 1 48 765 Tm (NEWSBOT INTELLIGENCE SYSTEM 2.0  /  ITAI 2373) Tj ET
-0.81 0.92 0.94 rg BT /F1 9 Tf 1 0 0 1 48 750 Tm (Repository and evidence links) Tj ET
-0.09 0.60 0.59 rg 48 725 516 3 re f
-0.04 0.37 0.39 rg BT /F2 10.9 Tf 1 0 0 1 48 708 Tm (Final project repository and evidence) Tj ET
-0.12 0.17 0.23 rg BT /F1 10.3 Tf 1 0 0 1 48 680.8 Tm (Jos\351 Miguel Tuozzo Izaguirre | ITAI 2373 | November 2026) Tj ET
-0.12 0.17 0.23 rg BT /F1 10.3 Tf 1 0 0 1 48 653.5999999999999 Tm (01 / Final project) Tj ET
-0.12 0.17 0.23 rg BT /F1 10.3 Tf 1 0 0 1 48 639.9999999999999 Tm (https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System) Tj ET
-0.12 0.17 0.23 rg BT /F1 10.3 Tf 1 0 0 1 48 612.7999999999998 Tm (02 / Final deliverables) Tj ET
-0.12 0.17 0.23 rg BT /F1 10.3 Tf 1 0 0 1 48 599.1999999999998 Tm (https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System/tree/main/final-newsbo) Tj ET
-0.12 0.17 0.23 rg BT /F1 10.3 Tf 1 0 0 1 48 585.5999999999998 Tm (t-2.0/submission) Tj ET
-0.12 0.17 0.23 rg BT /F1 10.3 Tf 1 0 0 1 48 558.3999999999997 Tm (03 / Successful automated verification) Tj ET
-0.12 0.17 0.23 rg BT /F1 10.3 Tf 1 0 0 1 48 544.7999999999997 Tm (https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System/actions/runs/456803493) Tj ET
-0.12 0.17 0.23 rg BT /F1 10.3 Tf 1 0 0 1 48 531.1999999999997 Tm (76) Tj ET
-0.12 0.17 0.23 rg BT /F1 10.3 Tf 1 0 0 1 48 503.99999999999966 Tm (04 / Research results and rubric crosswalk) Tj ET
-0.12 0.17 0.23 rg BT /F1 10.3 Tf 1 0 0 1 48 490.39999999999964 Tm (https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System/blob/main/final-newsbo) Tj ET
-0.12 0.17 0.23 rg BT /F1 10.3 Tf 1 0 0 1 48 476.7999999999996 Tm (t-2.0/docs/FINAL_SUBMISSION_REVIEW.md) Tj ET
-0.12 0.17 0.23 rg BT /F1 10.3 Tf 1 0 0 1 48 449.59999999999957 Tm (05 / Historical midterm foundation) Tj ET
-0.12 0.17 0.23 rg BT /F1 10.3 Tf 1 0 0 1 48 435.99999999999955 Tm (https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System/blob/main/docs/NewsBot) Tj ET
-0.12 0.17 0.23 rg BT /F1 10.3 Tf 1 0 0 1 48 422.3999999999995 Tm (_Executed_Results.ipynb) Tj ET
-0.12 0.17 0.23 rg BT /F1 10.3 Tf 1 0 0 1 48 395.1999999999995 Tm (The BBC historical holdout is separate from the 30 fictional final demonstration records.) Tj ET
-0.80 0.84 0.86 RG 48 36 m 564 36 l S
-0.35 0.42 0.48 rg BT /F1 8 Tf 1 0 0 1 48 22 Tm (Houston Community College  |  Final capstone  |  November 2026) Tj ET
-0.35 0.42 0.48 rg BT /F2 8 Tf 1 0 0 1 535 22 Tm (1/1) Tj ET
-endstream
+<<
+/Author (\(anonymous\)) /CreationDate (D:20261125200812+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20261125200812+00'00') /Producer (ReportLab PDF Library - \(opensource\)) 
+  /Subject (\(unspecified\)) /Title (\(anonymous\)) /Trapped /False
+>>
 endobj
 7 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 6 0 R >>
+<<
+/Count 1 /Kids [ 4 0 R ] /Type /Pages
+>>
+endobj
+8 0 obj
+<<
+/Filter [ /ASCII85Decode /FlateDecode ] /Length 997
+>>
+stream
+Gb!$ED/[lW&BE]&;r#QJe0K4s4RfKmh%mB*Y\$6n8173fc<CpJf\'ZdLZe#h;?R@M<G5!oVTJZ%J%n)"+lM<Fm('%q%Pi!a#S7?r&kLp`OIa66)`V.<#<i0D"GB/d30Zl5,LERt%1\@a$6]oM4_Qi,?Oj.Z$Aioc3Ut)uH3QG:T9E"5J3jtGOOZ$IR9e%Cfb=p/B4i%02#Df)Vl,a=$%NDFB&aT(O1+3.FRjm00["u-h@%E-+a[pG7S/D6_23S0P5p*7bk#>/M1P.p",f9_;8IY<cm8>_"<9W5K*]p6R$Y`1JHeMY&kJO3U]4u[1q'FA8G1BN+D506nHuQshVUssn+0O,>/UFPW)hdGHGNgY*Y!>cmPn`#Eu<YX,s,/"#?rF+jb6ed][p)G*OhE:nRnjfRE:11-CNhtcmRWN<4Af[;F39<M<7:p7"'j2:Q\!Iq\ZjSgFn,_jPFB.ft`*So`/[AO'C;>nbPd5Gm-XN<a%Do<uk=P_o4"#9:R+j0\?bl(n"0@0u?bYD:2kHPi>`.*Ca>X<\J#1j:8"m"bc50_)_OS,^9XTG>dp8o!V<u9>#aj&;U4_P[g290Iu6Wla;'#\gsJX\qO)(g:c(G?mI"kCC2qF/Dt33No#4$l0=RU\'@G&RRq;WltFQ1e:H*o>L6^P/D19I_n;+k-k*^g?LpMDb-[I,B\@k%%I_@;M4Q"JZ4(TZD\8h*k#E^.]IEVhr`*Z=pF>m2I/oaaiC0ZLm2Du"6HU5NGuI$]9:Vguqp<FKdpZ:/Ij.CGs+,'c)4,MKK=2/p`LXp&-8bXi"9WQaTO2c2M[DbRg:S-E$Aqk6FdH/g]tqD?=jgSTEq'k"E_BILaup_?0?<Z[Q]q%5-p8P_l"oY7ARE`;nK*3fnl@:F!cL(+/9@B:cIQ7ZU<rQcl1c%a$s*Ni0/W)cb!l!G%9Su/(?7@?9ni"HGC&"a`>b?e!>]/oMlt&]]rqo&B$[c0qppL=6Go^EIi*P8AHLuZ~>endstream
 endobj
 xref
-0 8
+0 9
 0000000000 65535 f 
-0000000009 00000 n 
-0000000058 00000 n 
-0000000115 00000 n 
-0000000212 00000 n 
-0000000314 00000 n 
-0000000409 00000 n 
-0000003048 00000 n 
+0000000061 00000 n 
+0000000102 00000 n 
+0000000209 00000 n 
+0000000321 00000 n 
+0000000514 00000 n 
+0000000582 00000 n 
+0000000862 00000 n 
+0000000921 00000 n 
 trailer
-<< /Size 8 /Root 1 0 R >>
+<<
+/ID 
+[<1b5772f14f0ab4aafa212f1ef91c5c54><1b5772f14f0ab4aafa212f1ef91c5c54>]
+% ReportLab generated PDF document -- digest (opensource)
+
+/Info 6 0 R
+/Root 5 0 R
+/Size 9
+>>
 startxref
-3194
+2008
 %%EOF

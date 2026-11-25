@@ -1,0 +1,40 @@
+{
+  "commit": "41d85f7355d110439333a9e8b9c48ca7dbb78849",
+  "transformers_version": "4.57.6",
+  "results": [
+    {
+      "status": "ok",
+      "model": "google/flan-t5-small",
+      "draft": "A university engineering team has tested a low-power computer chip designed to reduce the energy required for artificial intelligence tasks.",
+      "source_id": "demo-tech-1",
+      "source_sha256": "c4e7d2bf53009bc237f26731d2842a082e621cfe79588f52a06c435245fed5b4",
+      "synthetic": true,
+      "extractive_reference": "A university engineering team tested an experimental computer chip designed to reduce the energy required for artificial intelligence tasks. The study measured processing time and power consumption under laboratory conditions. The researchers plan another trial before any public release.",
+      "draft_vocabulary_overlap": 0.9474,
+      "warning": "Unverified neural editorial draft. Lexical overlap is not factuality; verify names, numbers and claims against the source."
+    },
+    {
+      "status": "ok",
+      "model": "google/flan-t5-small",
+      "draft": "A robotics lab demonstrates safer indoor navigation in a lab that identifies obstacles using cameras and distance sensors.",
+      "source_id": "demo-tech-2",
+      "source_sha256": "15f9bbdae41fae3624215a4b1209170ec716b2db20ad294ad99cada3bd335165",
+      "synthetic": true,
+      "extractive_reference": "A robotics laboratory presented an indoor robot that identifies obstacles using cameras and distance sensors. Engineers compared the navigation software with a simple baseline in a small test arena. The team emphasized that the device remains an academic prototype.",
+      "draft_vocabulary_overlap": 1.0,
+      "warning": "Unverified neural editorial draft. Lexical overlap is not factuality; verify names, numbers and claims against the source."
+    },
+    {
+      "status": "ok",
+      "model": "google/flan-t5-small",
+      "draft": "Computer scientists have published a simulated study of privacy-preserving data tools for sharing research datasets.",
+      "source_id": "demo-tech-3",
+      "source_sha256": "a7bfe00df55c74b33668db3510b778d1a620633c31a95bb4dbc6355ded54d4b5",
+      "synthetic": true,
+      "extractive_reference": "Computer scientists published a simulated study of privacy-preserving methods for sharing research datasets. Their tests compared data utility against possible information leakage. The researchers called for larger independent validation before deployment.",
+      "draft_vocabulary_overlap": 0.9333,
+      "warning": "Unverified neural editorial draft. Lexical overlap is not factuality; verify names, numbers and claims against the source."
+    }
+  ],
+  "scope": "Three actual neural drafts from fictional articles; no human-rated factuality or summarization accuracy claimed."
+}

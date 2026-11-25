@@ -19,3 +19,6 @@ See [executed integrated notebook](../evidence/Final_NewsBot_2.0_Executed.ipynb)
 
 ## Real-data live demonstration
 Run `python run_real_evidence.py --export-local` from final-newsbot-2.0. With instructor-approved access to the historical BBC data, import `data/raw/bbc_demo_private.jsonl` using the sidebar. This file is excluded from Git; do not redistribute copyrighted content. For the optional neural editorial draft install requirements-generation.txt and set NEWSBOT_ENABLE_NEURAL=1; model output is an unverified draft.
+
+## Dated and regional context scenario
+Select **Load dated cross-language scenario** in the sidebar. It loads ten explicitly fictional articles across September–November 2026 about three shared transit events, with EN/ES/FR/DE and explicitly supplied fictional source-region metadata. Compare the shared-event excerpts in Search & Languages and the three-month LDA/NMF chart in Research Lab. These are scenario demonstrations, not claims about actual regional cultures. Optional CSV/JSONL fields: source_region and event_id.

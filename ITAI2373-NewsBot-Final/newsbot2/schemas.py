@@ -29,6 +29,8 @@ class Article:
     category: str = ''
     url: str = ''
     synthetic: bool = False
+    source_region: str = ''
+    event_id: str = ''
 
     def __post_init__(self):
         if not re.fullmatch(r'[A-Za-z0-9._-]{1,80}', self.article_id):
@@ -36,6 +38,8 @@ class Article:
         object.__setattr__(self, 'title', normalize_text(self.title)[:MAX_TITLE])
         object.__setattr__(self, 'body', normalize_text(self.body)[:MAX_BODY])
         object.__setattr__(self, 'source', normalize_text(self.source)[:160])
+        object.__setattr__(self, 'source_region', normalize_text(self.source_region)[:100])
+        object.__setattr__(self, 'event_id', normalize_text(self.event_id)[:100])
         if not self.title or len(self.body) < 30:
             raise ValueError('An article needs a title and at least 30 characters of body text')
         if self.url and not self.url.startswith(('https://','http://')):

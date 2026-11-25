@@ -28,6 +28,7 @@ def import_articles(path: str|Path)->list[Article]:
             title=r.get('title',''),body=r.get('body',''),source=r.get('source','User provided'),
             published_at=r.get('published_at',''),language=r.get('language') or 'auto',
             category=r.get('category') or '',url=r.get('url') or '',
+            source_region=r.get('source_region') or '',event_id=r.get('event_id') or '',
             synthetic=str(r.get('synthetic','false')).lower()=='true' if isinstance(r.get('synthetic'),str) else bool(r.get('synthetic',False)))
         if doc.article_id in seen: raise ValueError(f'Duplicate id: {doc.article_id}')
         seen.add(doc.article_id);data.append(doc)
