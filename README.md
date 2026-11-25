@@ -12,6 +12,10 @@ This portfolio includes five main sections, including a complete natural-languag
 
 ### 📰 Natural Language Processing — ITAI 2373
 
+**[NewsBot Intelligence System 2.0 — Final](ITAI2373-NewsBot-Final/README.md)**
+
+Capstone: LDA/NMF, clustering, source-grounded conversational NLP, multilingual embeddings and translation, reproducible historical evaluation, Streamlit and technical/business deliverables. [Canonical repository](https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System) · [Detailed rubric](https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System/blob/main/final-newsbot-2.0/docs/CANVAS_VERIFICATION.md).
+
 **[NewsBot Intelligence System — Midterm](ITAI2373-NewsBot-Midterm/README.md)**
 
 A complete eight-module historical news NLP project with text normalization, TF-IDF, POS/dependency syntax, VADER sentiment, named entities, and multiclass classification. The portfolio folder contains the runnable notebook, code, reproducibility files, **eight generated figures**, **seven-page technical PDF**, and a **two-page reflective journal draft**. A real BBC evaluation of 288 holdout articles achieved **96.18% accuracy** and **0.9605 macro-F1** using a tuned Linear SVM. The results describe historical BBC coverage only; the reflection requires the student's firsthand review.
@@ -19,7 +23,7 @@ A complete eight-module historical news NLP project with text normalization, TF-
 - [Open the course notebook](ITAI2373-NewsBot-Midterm/Midterm_NewsBot_Intelligence_System.ipynb)
 - [Read the data-grounded technical findings](ITAI2373-NewsBot-Midterm/docs/Technical_Results_Summary.md)
 - [View academic technical report PDF](ITAI2373-NewsBot-Midterm/docs/MT_Report_Group_Solo_Jose_Miguel_Tuozzo_Izaguirre_ITAI2373.pdf)
-- [Inspect full canonical implementation and successful tests](https://github.com/jtuozzo1616/Mid-Term-Jose-Group-NewsBot-Intelligence-System)
+- [Inspect full canonical implementation and successful tests](https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System/blob/main/MIDTERM.md)
 
 ---
 

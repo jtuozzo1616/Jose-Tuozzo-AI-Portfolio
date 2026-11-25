@@ -1,0 +1,38 @@
+name: Sync NewsBot final portfolio project
+on:
+  push:
+    paths: ['.github/workflows/sync-newsbot-final.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: newsbot-portfolio-sync
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Mirror complete final project
+        run: |
+          git clone --depth=1 https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System.git "$RUNNER_TEMP/newsbot"
+          mkdir -p ITAI2373-NewsBot-Final
+          rsync -a --delete --exclude '.git' --exclude 'bbc_demo_private.jsonl' "$RUNNER_TEMP/newsbot/final-newsbot-2.0/" ITAI2373-NewsBot-Final/
+          echo "Canonical source: https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System" > ITAI2373-NewsBot-Final/SOURCE_REVISION.md
+          echo "Mirrored commit: $(git -C "$RUNNER_TEMP/newsbot" rev-parse HEAD)" >> ITAI2373-NewsBot-Final/SOURCE_REVISION.md
+          cp "$RUNNER_TEMP/newsbot/outputs/holdout_metrics.json" ITAI2373-NewsBot-Final/artifacts/historical_midterm_holdout.json
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('ITAI2373-NewsBot-Final/README.md')
+          s=p.read_text()
+          s=s.replace('[Instructor review and documents](../README.md)','[Canonical instructor review and documents](https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System)').replace('[Historical midterm](../MIDTERM.md)','[Historical midterm](https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System/blob/main/MIDTERM.md)')
+          p.write_text('# ITAI 2373 Final — individual portfolio\n\nJosé Miguel Tuozzo Izaguirre | JoseGroup\n\n[Canonical repository and instructor review](https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System) · [Contribution record](docs/CONTRIBUTIONS.md) · [Detailed rubric](docs/CANVAS_VERIFICATION.md) · [Submission files](submission/) · [Executed evidence](evidence/)\n\nThis is a complete source snapshot of the canonical final project. The revision is recorded in SOURCE_REVISION.md.\n\n'+s)
+          PY
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f ITAI2373-NewsBot-Final
+          git diff --cached --quiet && exit 0
+          git commit -m 'Mirror complete NewsBot 2.0 final into individual portfolio'
+          git pull --rebase origin main
+          git push origin HEAD:main
