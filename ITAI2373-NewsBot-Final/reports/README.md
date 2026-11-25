@@ -1,2 +1,3 @@
 # Report index
-The required named Canvas PDFs and PowerPoint are in [submission](../submission/). The updated rubric report generator writes professional deliverables here and copies them into submission after successful execution. Original five-page student journal is retained separately; three-page revision requires review.
+
+The authoritative Canvas-named files are in [submission](../submission/). The report copies here are retained for the explicit rubric folder layout; they are not additional required submissions.

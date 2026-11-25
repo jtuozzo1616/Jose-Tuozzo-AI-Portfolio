@@ -1,0 +1,28 @@
+{
+  "source": "Student-supplied executed Google Colab notebook, inspected saved cell outputs",
+  "file_name": "NewsBot_JoseT_2_0_Master_Colab.ipynb",
+  "sha256": "f9c50b3d65decb11d5abb4160dc899078b053f736c6b9937d69b724d108e892f",
+  "bytes": 1588403,
+  "source_commit": "5e415062572ff7e570fd48586cb7d07843ecccd1",
+  "python": "3.13.18",
+  "cells": 22,
+  "executed_code_cells": 10,
+  "saved_png_outputs": 13,
+  "error_outputs": 0,
+  "sections_passed": 8,
+  "sections_total": 8,
+  "pytest": {
+    "passed": 33,
+    "seconds": 19.34
+  },
+  "final_output": "ALL EIGHT INTEGRATED SECTIONS COMPLETED IN THIS RUNTIME.",
+  "archived_evidence": [
+    "BBC real-data evaluation",
+    "FLAN-T5 inference",
+    "MiniLM embeddings",
+    "Argos translation",
+    "browser captures"
+  ],
+  "note": "Uploaded byte-identical to student attachment; Git blob and local SHA-256 independently matched. Archived model and BBC results displayed, not rerun in this Colab session.",
+  "git_blob": "fbb7dcbeafe9f83d5d3dc18d6ca17b8e81cc665a"
+}

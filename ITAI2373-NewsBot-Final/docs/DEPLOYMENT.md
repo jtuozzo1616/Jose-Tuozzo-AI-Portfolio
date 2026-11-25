@@ -1,13 +1,13 @@
-# Public deployment
+# Deployment and verification
 
-The Streamlit application is ready for a free Community Cloud deployment. Account authorization is required; a public app URL is not asserted until the host returns it and a browser smoke test passes.
+**Live academic demo:** https://final-jose-group-newsbot-intelligence-system-al984gd7vc9uzqmek.streamlit.app/
 
-1. Sign in at https://share.streamlit.io/ using GitHub.
-2. Create an app from an existing repository.
-3. Repository: `jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System`; branch: `main`; main file: `final-newsbot-2.0/app.py`.
-4. Use Python 3.11 in advanced settings. Deploy. The adjacent requirements.txt installs the application dependencies.
-5. Copy the issued URL, open it in a private browser and exercise all five tabs. The bundled fictional data is safe to display publicly; do not upload confidential or copyrighted content.
+Student confirmed the application and PDF/DOCX import after the dependency fix. Anonymous public access still needs independent confirmation; external fetch was unsuccessful. The default demo uses CPU models and no paid API. Hosted uploads are processed on the server; avoid sensitive or unauthorized material.
 
-For a free Render alternative, the root render.yaml defines a Docker service, with health check at /_stcore/health. Authorize the repo and approve the free service before deployment. The default public instance deliberately uses the lightweight local classifier rather than downloading neural models. No paid API is required.
+## Reproduce deployment
+1. Sign in at https://share.streamlit.io/ and authorize GitHub.
+2. Repository `jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System`, branch `main`, entry `final-newsbot-2.0/app.py`.
+3. Use Python 3.11 if available; deploy. The adjacent flat requirements.txt lists all dependencies, including pypdf and python-docx.
+4. Open the issued URL in a private browser; exercise all five tabs and upload a text PDF and a Word file. If imports fail, check the build log and reboot after dependency changes.
 
-The neural option is documented separately and should be demonstrated locally or using the actual CI evidence, not advertised as active in the lightweight hosted demo.
+[Hosted dependency and 38-test verification](https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System/actions/runs/45698267399). For Docker see [Dockerfile.web](../Dockerfile.web) and the root render.yaml. For limitations and optional neural assets see [user guide](user_guide.md).

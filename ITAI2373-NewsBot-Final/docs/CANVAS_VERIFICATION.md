@@ -1,17 +1,24 @@
-# Detailed rubric crosswalk — supplied 18-page assignment
-Core 200: repository 50; advanced analysis 75; documentation 40; presentation 35. The document also gives assessment lenses 100 technical + 50 documentation + 50 presentation; do not add the two scales. Bonus up to 50.
-| Item | Evidence | Status |
+# Final rubric audit — ITAI 2373
+**Basis:** supplied 18-page “ITAI 2373 - Final Project: NewsBot Intelligence System 2.0” instructions, pp. 3–15. Core 200 = 50 + 75 + 40 + 35. The alternative 100/50/50 assessment lenses describe the same 200 points, not additional credit. Bonus maximum 50.
+
+| Requirement | Evidence | Audit |
 |---|---|---|
-| Repository structure and quality (50) | src facade, config, notebooks, tests, data, docs, reports, README | source published; full individual portfolio folder synced; revision recorded |
-| Topic discovery (20) | advanced.py LDA/NMF, monthly distributions, K-means, UI charts | implemented; 33 tests passed and both models fitted on 250 real historical records; three-month fictional scenario added; no actual news trend claim |
-| Language models (20) | MMR, contextual retrieval, template generation, expansion, verified MiniLM | embedding execution verified; actual pretrained FLAN-T5 inference verified for three drafts |
-| Multilingual (20) | ES→EN Argos evidence, four language hints, comparison | ES→EN verified; shared-event language/region comparison in fictional scenario; human context still required |
-| Conversation (15) | intent routing, multi-part filters, context, cited answers | implemented; 32 tests passed; updated browser run must be checked |
-| Technical docs (15) | architecture, API, installation, configuration | published |
-| User docs (15) | guide, tutorials, FAQ, demo | automated browser workflow records a real screen demonstration; student presentation remains separate |
-| Business docs (10) | ROI scenario, use cases, competitor comparison | published |
-| Presentation (35) | 18 slides with notes, live real-data demo plan and verified 250-record historical CV | student must rehearse and deliver 15 minutes |
-| Reflection | 3 pages, contribution, challenges, lessons, future | revised reading draft requires student approval |
-| Web bonus (30) | Streamlit, batch, charts, deployment guide | public URL not verified |
-| Research bonus (20) | paired ablation, lexical vs neural retrieval, real-data evaluation | controlled extensions; examples of advanced research are not all implemented |
-Source PDF shows August 7, 2024, an older deadline; use actual current Canvas assignment date. Required individual portfolio folder: ITAI2373-NewsBot-Final. Academic integrity expressly requires attribution of external resources, libraries and AI assistance, actual personal contributions and original core work. Confirm solo/group approval with instructor.
+| Enhanced GitHub repository (50), pp. 3–6 | [source](../src/), [implementation](../newsbot2/), [config](../config/), [tests](../tests/), [tutorials](../notebooks/), [data](../data/), [docs](../docs/), [reports](../reports/), [individual portfolio](https://github.com/jtuozzo1616/Jose-Tuozzo-AI-Portfolio/tree/main/ITAI2373-NewsBot-Final) | Modular source, 38 tests, meaningful history, seven tutorial notebooks and master notebook. Test file names differ from the illustrative layout; original raw BBC texts are not redistributed. No peer review/branching strategy demonstrated. |
+| Topic modeling (20), p. 6 | [advanced.py](../newsbot2/advanced.py), [BBC aggregate](../evidence/real_bbc_final_evaluation.json), [temporal UI](../evidence/screenshots/07-temporal-topic-discovery.png) | LDA, NMF, clustering, interactive selection and monthly plots. Real BBC dates unavailable; three-month evolution uses explicitly fictional data. |
+| Language models (20), p. 7 | [analysis](../newsbot2/analysis.py), [retrieval](../newsbot2/retrieval.py), [generation](../newsbot2/generation.py), [real FLAN-T5](../evidence/generation_results.json), [MiniLM](../evidence/embedding_results.json) | Extractive summary, draft generation, semantic search, query expansion. No human-rated summary factuality or external retrieval benchmark. Neural inference verified separately, not enabled by default on hosted app. |
+| Multilingual (20), p. 7 | [language](../newsbot2/language.py), [translation](../evidence/translation_results.json), [shared event UI](../evidence/screenshots/06-shared-event.png) | Language hints, actual ES→EN inference, cross-language comparisons; regional scenario is fictional and source metadata is not cultural bias. |
+| Conversation (15), p. 7 | [chat](../newsbot2/chat.py), [advanced intent routing](../newsbot2/advanced.py), [browser chat](../evidence/screenshots/04-grounded-chat.png) | Rule-based multi-intent, category/date/tone preferences, bounded context, cited extracts, JSON reports and abstention. Not unrestricted reasoning or fact checking. |
+| Technical documentation (15), p. 7 | [technical specification](technical_documentation.md), [API](api_reference.md), [installation](../README.md), [deployment](DEPLOYMENT.md), [PDF](../submission/FP_TechnicalDoc_JoseMiguelTuozzo_JoseGroup_ITAI2373.pdf) | Published; API guide describes interfaces, not exhaustive documentation of every internal method. |
+| User documentation (15), p. 8 | [guide / FAQ](user_guide.md), [tutorials](../notebooks/), [master Colab](../evidence/NewsBot_JoseT_2_0_Master_Colab.ipynb), [browser recording](../evidence/video/) | Tutorial notebooks and master executed; screen recording is automated, not a narrated team presentation. |
+| Business documentation (10), p. 8 | [business case](business_analysis.md), [executive PDF](../submission/FP_ExecutiveSummary_JoseMiguelTuozzo_JoseGroup_ITAI2373.pdf) | Value, scenarios, competitive positioning and illustrative 140% ROI. Savings are assumptions, not measured customer outcomes. |
+| Professional presentation (35), pp. 8, 13 | [18-slide PPTX with notes](../submission/FP_Presentation_JoseMiguelTuozzo_JoseGroup_ITAI2373.pptx), [demo guide](ORAL_DEFENSE.md) | Materials prepared. Live 15-minute presentation, team participation and Q&A not verified; student chose not to pursue further presentation preparation. |
+| Reflective journal, pp. 12–14 | [3-page PDF](../submission/FP_ReflectiveJournal_JoseGroup_ITAI2373.pdf), [contributions](CONTRIBUTIONS.md) | Condensed draft; actual contributions/group approval not independently confirmed. Student requested no further journal changes. |
+| Web bonus (30), pp. 8–10, 13 | [Live Streamlit](https://final-jose-group-newsbot-intelligence-system-al984gd7vc9uzqmek.streamlit.app/), [source](../app.py), [deployment](DEPLOYMENT.md), [guide](user_guide.md), [document ingestion](../newsbot2/documents.py) | Student confirmed hosted PDF/Word import; CI verifies parsers and tests. External fetch could not verify anonymous public access; demo requirement remains. |
+| Research bonus (20), p. 11 | [ablation](../run_robustness.py), [research](../run_research.py), [BBC](../evidence/real_bbc_final_evaluation.json), [model evidence](../evidence/README.md) | Actual controlled extensions, not transformer fine-tuning, few-shot learning, multimodal analysis, live streaming, fact checking or trend forecasting. Bonus eligibility determined by instructor. |
+
+## Submission checklist (pp. 12–15)
+- Individual portfolio URL and project folder; five submission files indexed in [submission](../submission/).
+- Eight original notebooks passed in student Colab; integrated master pinned at an earlier revision passed 33 tests. Latest 38-test CI passed after adding document ingestion.
+- Names use JoseMiguelTuozzo / JoseGroup; official group label and individual/team approval not independently verified.
+- Assignment PDF lists August 7, 2024; use the actual current Canvas deadline instead.
+- Academic integrity requires original core work, attribution of libraries/external resources/AI assistance and actual contributions. See [contributions](CONTRIBUTIONS.md). No grade or full compliance guarantee is made.

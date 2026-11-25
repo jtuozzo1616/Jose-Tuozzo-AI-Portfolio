@@ -8,7 +8,9 @@ This is a complete source snapshot of the canonical final project. The revision 
 
 # NewsBot 2.0 — implementation and quick start
 
-[Canonical instructor review and documents](https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System) · [Final submission](submission/) · [Evaluation and rubric](docs/FINAL_SUBMISSION_REVIEW.md)
+[Live application](https://final-jose-group-newsbot-intelligence-system-al984gd7vc9uzqmek.streamlit.app/) · [Master Colab](evidence/NewsBot_JoseT_2_0_Master_Colab.ipynb) · [Open in Colab](https://colab.research.google.com/github/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System/blob/main/final-newsbot-2.0/evidence/NewsBot_JoseT_2_0_Master_Colab.ipynb) · [Final submission](submission/) · [Rubric audit](docs/CANVAS_VERIFICATION.md)
+
+**Latest QA:** [38 tests passed](https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System/actions/runs/45698267399); [evidence index](evidence/README.md). [Contribution record](docs/CONTRIBUTIONS.md) documents the student's reported responsibilities, actual Colab verification and AI assistance.
 
 Python 3.11 recommended. From this directory:
 
@@ -25,7 +27,7 @@ python run_research.py
 streamlit run app.py
 ```
 
-The app includes 30 fictional articles, five categories and four language labels. It uses the trusted historical model from the parent repository when available. Do not load untrusted joblib files. Use the sidebar to import your own licensed CSV or JSONL records. Required fields: article_id, title, body; optional source, published_at, language, category, url, synthetic. Import caps: 8 MB / 3,000 records. The model can train on labeled imported records; a training fit is not a held-out score.
+The app includes 30 fictional articles, five categories and four language labels. It uses the trusted historical model from the parent repository when available. Do not load untrusted joblib files. Use the sidebar to import permitted PDF, DOCX, TXT, Markdown, HTML, CSV, JSON or JSONL files. Hosted limits: 10 files, 8 MB combined, 100 PDF pages per file, 250,000 extracted characters and 300 searchable fragments. Scanned PDFs require OCR outside the app. The legacy structured importer has separate limits; see the user guide. The model can train on labeled imported records; a training fit is not a held-out score.
 
 ## API
 
@@ -49,11 +51,11 @@ The initial model download requires internet access. Argos Translate also requir
 
 - [Permanent verified results](artifacts/verified_final_summary.json), [prior demo results](artifacts/research_results.json) and [current research runner](run_research.py).
 - [Design contracts, threats and limitations](docs/ARCHITECTURE_AND_LIMITS.md).
-- [Full final rubric crosswalk and evidence map](docs/FINAL_SUBMISSION_REVIEW.md).
+- [Full final rubric crosswalk and evidence map](docs/CANVAS_VERIFICATION.md).
 - [All current deliverables](submission/).
 - [Historical midterm](https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System/blob/main/MIDTERM.md).
 
-The bundled corpus and evaluation probes are fictional. The BBC midterm holdout is a separate historical experiment. Source citations do not establish factual truth. No production deployment, independently validated translation or external generalization is claimed.
+The bundled corpus and evaluation probes are fictional. The BBC midterm holdout is a separate historical experiment. Source citations do not establish factual truth. A hosted academic demo is available; no production readiness, independently rated translation or external generalization is claimed.
 
 ## References
 

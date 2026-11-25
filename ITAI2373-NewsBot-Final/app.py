@@ -10,6 +10,7 @@ import pandas as pd
 from newsbot2.engine import NewsBotEngine
 from newsbot2.analysis import Classifier
 from newsbot2.io import import_articles
+from newsbot2.documents import import_documents, FORMATS
 from newsbot2.advanced import discover_topics,sentiment_timeline,entity_network,language_comparison,structured_query,expand_query,hierarchy,export_report,compare_event_coverage
 
 st.set_page_config(page_title='NewsBot Intelligence · 2.0',page_icon='🗞️',layout='wide',
@@ -18,14 +19,14 @@ ROOT=Path(__file__).parent
 
 st.markdown('''<style>
 :root { --navy: #101c30; --ink: #dfe9f9; --muted: #a1b2c6; --accent: #59d1c6; }
-[data-testid="stAppViewContainer"] { background:radial-gradient(ellipse at top left,#192d43 0%,#0a121f 63%);color:#e8eef7; }
-[data-testid="stSidebar"] { background:#111e30; }
+[data-testid="stAppViewContainer"] { background:var(--background-color);color:var(--text-color); }
+[data-testid="stSidebar"] { background:var(--secondary-background-color); }
 h1,h2,h3 { letter-spacing:-.035em; }
-div[data-testid="stMetric"] { background:#15273c;border:1px solid #2a475d;padding:17px;border-radius:12px; }
+div[data-testid="stMetric"] { background:var(--secondary-background-color);border:1px solid #7895ae66;padding:17px;border-radius:12px; }
 .stTabs [data-baseweb="tab-list"]{gap:14px}.stTabs [data-baseweb="tab"]{padding:10px 17px}
 .newshero {padding:28px 30px;border:1px solid #294960;border-radius:16px;
  background:linear-gradient(108deg,#183951,#0e1e32 65%);margin-bottom:23px}
-.newshero h1{font-size:42px;margin:5px 0 9px}.eyebrow{color:#59d1c6;text-transform:uppercase;letter-spacing:.13em;font-size:12px;font-weight:700}
+.newshero h1{font-size:42px;margin:5px 0 9px;color:#e8eef7}.eyebrow{color:#59d1c6;text-transform:uppercase;letter-spacing:.13em;font-size:12px;font-weight:700}
 .caption{color:#b2c4d6;font-size:14px}
 </style>''',unsafe_allow_html=True)
 
@@ -51,29 +52,37 @@ with st.sidebar:
     st.markdown('### 🗞️ NewsBot 2.0')
     st.caption('ITAI 2373 · Final capstone')
     st.markdown('**Corpus and provenance**')
-    uploaded=st.file_uploader('Import your own articles (.csv / .jsonl)',type=['csv','jsonl'],
-          help='Columns: article_id, title, body. Optional: category, language, source, synthetic.')
-    if uploaded is not None and st.button('Load uploaded corpus',use_container_width=True):
+    uploaded=st.file_uploader('Import articles or documents',type=list(FORMATS),accept_multiple_files=True,
+          help='PDF, Word, TXT, Markdown, HTML, CSV, JSON or JSONL. Up to 10 files, 8 MB combined. Text PDFs only; no OCR.')
+    st.caption('Uploads are processed in this session on the hosted server. Do not upload sensitive or unauthorized material.')
+    if uploaded and st.button('Load uploaded corpus',use_container_width=True):
         try:
-            with tempfile.TemporaryDirectory() as tmp:
-                dest=Path(tmp)/('upload.'+uploaded.name.rsplit('.',1)[-1].lower())
-                dest.write_bytes(uploaded.getvalue())
-                if dest.stat().st_size>8_000_000:raise ValueError('8 MB maximum')
-                articles=import_articles(dest)
-            st.session_state.engine=NewsBotEngine(articles)
-            st.session_state.chat_history=[]
+            with st.spinner('Extracting and indexing document text...'):
+                articles,notes=import_documents([(f.name,f.getvalue()) for f in uploaded])
+                # Use the existing classifier when available; retain its explicit training origin.
+                candidate=NewsBotEngine(articles,classifier=eng.classifier)
+                st.session_state.engine=candidate
+                st.session_state.chat_history=[]
+                for key in ('structured','batch'):st.session_state.pop(key,None)
+                st.session_state.import_notes=notes
+                st.session_state.import_count=len(articles)
             st.rerun()
-        except Exception as exc:st.error(str(exc))
+        except Exception as exc:st.error(f'Import failed: {exc}')
+    if 'import_count' in st.session_state:
+        st.success(f"Indexed {st.session_state.import_count} searchable text fragments.")
+        for note in st.session_state.get('import_notes',[]):st.warning(note)
     if st.button('Restore synthetic demonstration',use_container_width=True):
         trusted=next((p for p in (ROOT/'outputs'/'newsbot_classifier.joblib', ROOT.parent/'outputs'/'newsbot_classifier.joblib') if p.is_file()), ROOT/'outputs'/'newsbot_classifier.joblib')
         clf=Classifier.from_trusted_joblib(str(trusted)) if trusted.exists() and os.getenv('NEWSBOT_DEMO_ONLY') != '1' else None
         st.session_state.engine=NewsBotEngine(import_articles(ROOT/'data/demo_news.jsonl'),classifier=clf)
         if clf is None:st.session_state.engine.train_local_classifier()
         st.session_state.chat_history=[]
+        for key in ('structured','batch','import_notes','import_count'):st.session_state.pop(key,None)
         st.rerun()
     if st.button('Load dated cross-language scenario',use_container_width=True):
         st.session_state.engine=NewsBotEngine(import_articles(ROOT/'data/demo_timeline.jsonl'))
         st.session_state.chat_history=[]
+        for key in ('structured','batch','import_notes','import_count'):st.session_state.pop(key,None)
         st.rerun()
     st.divider()
     if os.getenv('NEWSBOT_ENABLE_NEURAL') == '1':
@@ -96,7 +105,7 @@ st.markdown('''<div class="newshero"><div class="eyebrow">NLP · Multilingual se
 
 stats=eng.overview()
 m1,m2,m3,m4=st.columns(4)
-m1.metric('Articles',stats['total_articles'])
+m1.metric('Searchable records',stats['total_articles'])
 m2.metric('Topics represented',len(stats['label_distribution']))
 m3.metric('Synthetic records',stats['synthetic_articles'])
 m4.metric('Retrieval engine','Embeddings' if 'embeddings' in stats['retrieval_method'] else 'TF-IDF')
@@ -118,7 +127,7 @@ with tabs[0]:
         st.dataframe(table,hide_index=True,use_container_width=True,height=410)
         st.download_button('Export corpus metadata',table.to_csv(index=False).encode('utf-8'),
                            'newsbot_corpus_manifest.csv',mime='text/csv')
-    st.info('The demonstration is fictional. Midterm BBC metrics are published separately and are NOT results for this corpus. Default category model may be trained on synthetic demo records only.')
+    st.info('The default demonstration is fictional. Uploaded documents retain their source and fragment location. BBC metrics are separate; classifier scores are uncalibrated and may not generalize to your document domain.')
 
 with tabs[1]:
     st.subheader('Multi-layer content analysis')
@@ -194,7 +203,10 @@ with tabs[3]:
         with st.chat_message('user'):st.write(item['question'])
         with st.chat_message('assistant'):
             st.write(item['answer'])
-            if item['citations']:st.caption('Sources: '+', '.join('['+s['article_id']+']' for s in item['citations']))
+            if item['citations']:
+                st.caption('Sources: '+', '.join('['+s['article_id']+']' for s in item['citations']))
+                for s in item['citations']:
+                    if s['article_id'] in eng.by_id:st.caption(eng.by_id[s['article_id']].source)
     with st.form('ask_corpus_form',clear_on_submit=True):
         q=st.text_input('Question about the loaded articles',placeholder='What did the robotics team measure?')
         send=st.form_submit_button('Ask NewsBot',type='primary')
@@ -204,7 +216,10 @@ with tabs[3]:
         with st.chat_message('user'):st.write(q)
         with st.chat_message('assistant'):
             st.write(reply['answer'])
-            if reply['citations']:st.caption('Sources: '+', '.join('['+s['article_id']+']' for s in reply['citations']))
+            if reply['citations']:
+                st.caption('Sources: '+', '.join('['+s['article_id']+']' for s in reply['citations']))
+                for s in reply['citations']:
+                    if s['article_id'] in eng.by_id:st.caption(eng.by_id[s['article_id']].source)
     with st.expander('Structured questions, preferences and report export'):
         pref=st.multiselect('Preferred categories',sorted({a.category for a in eng.articles if a.category}))
         sq=st.text_input('Editorial question',value='Compare tech topics across languages')

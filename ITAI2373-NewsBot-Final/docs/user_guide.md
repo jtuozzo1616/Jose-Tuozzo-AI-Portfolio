@@ -22,3 +22,6 @@ Run `python run_real_evidence.py --export-local` from final-newsbot-2.0. With in
 
 ## Dated and regional context scenario
 Select **Load dated cross-language scenario** in the sidebar. It loads ten explicitly fictional articles across September–November 2026 about three shared transit events, with EN/ES/FR/DE and explicitly supplied fictional source-region metadata. Compare the shared-event excerpts in Search & Languages and the three-month LDA/NMF chart in Research Lab. These are scenario demonstrations, not claims about actual regional cultures. Optional CSV/JSONL fields: source_region and event_id.
+
+## Document import
+The hosted interface supports text-based PDF, DOCX, TXT, Markdown, saved HTML, CSV, JSON and JSONL. Upload up to 10 files, 8 MB combined, at most 100 PDF pages per file, 250,000 extracted characters and 300 searchable fragments. PDF pages and fragment identifiers remain in citations; scanned or encrypted PDFs require preparation outside the app. Files are processed on the hosting server for the current session, not an offline local device. Do not upload sensitive data or content you lack permission to process. Structured objects accept body/text/content fields; classifier labels and metrics are not guaranteed for arbitrary documents.

@@ -1,0 +1,22 @@
+{
+  "ci_run": 45698267399,
+  "ci_url": "https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System/actions/runs/45698267399",
+  "tested_commit": "594c3e5b675d6ebf3c38eff214717361b3032752",
+  "passed": 38,
+  "warnings": 1,
+  "seconds": 2.8,
+  "hosted_manifest_parsers": {
+    "pypdf": "6.21.4",
+    "python_docx": "1.2.0"
+  },
+  "colab": {
+    "passed_sections": 8,
+    "tests": 33,
+    "revision": "5e415062572ff7e570fd48586cb7d07843ecccd1"
+  },
+  "deployment": {
+    "url": "https://final-jose-group-newsbot-intelligence-system-al984gd7vc9uzqmek.streamlit.app/",
+    "student_report": "PDF and Word import functional after dependency update",
+    "independent_public_access": "not verified; web fetch cache miss"
+  }
+}
