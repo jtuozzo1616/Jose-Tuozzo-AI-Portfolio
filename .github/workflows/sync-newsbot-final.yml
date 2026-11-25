@@ -14,6 +14,22 @@ jobs:
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+      - name: Wait for the exact final verification runs (bounded)
+        run: |
+          python - <<'PY'
+          import json,time,urllib.request
+          runs=[45692010672,45691589311]
+          for attempt in range(24):
+              statuses=[]
+              for run in runs:
+                  u=f"https://api.github.com/repos/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System/actions/runs/{run}"
+                  with urllib.request.urlopen(u,timeout=15) as response:
+                      v=json.load(response)
+                  statuses.append((run,v["status"],v["conclusion"]))
+              print(statuses,flush=True)
+              if all(x[1]=="completed" for x in statuses):break
+              time.sleep(15)
+          PY
       - name: Mirror complete final project
         run: |
           git clone --depth=1 https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System.git "$RUNNER_TEMP/newsbot"
