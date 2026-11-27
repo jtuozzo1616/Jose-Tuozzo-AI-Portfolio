@@ -2,6 +2,13 @@
 
 **José Miguel Tuozzo Izaguirre | Applied AI & Robotics | Fall 2026**
 
+## Course artifacts
+
+- [Lab 1 hardware diagnostic](lab01/Jose_Tuozzo_Lab1_PiDog_RaspberryPi.py) — recovered source with a missing Path import corrected; hardware only.
+- [Buddy Autonomy and voice/vision archive](buddy/README.md) — actual recovered source and reproducible offline self-tests.
+- [Historical terminal observations](evidence/TERMINAL_OBSERVATIONS.md) — selected anonymized log excerpts.
+- [Course coverage and validation boundaries](COURSE_COVERAGE.md).
+
 ## Problem and approach
 
 A quadruped robot must coordinate motion, sense its surroundings and respond to human input without treating unreliable sensor readings as safe clearance. This portfolio preserves two course implementations: a terminal-driven midterm controller and a reactive multi-sensor navigation lab.
@@ -38,7 +45,7 @@ python3 -m unittest -v test_lab10_logic.py
 python3 -m py_compile pidog_midterm.py lab10_multisensor.py
 ```
 
-The offline tests use only Python's standard library. They do not move a robot.
+The offline tests use only Python's standard library. All eight Lab 10 tests passed again in the portfolio review; Buddy's independent simulator and V9 range-filter self-tests also passed. Run `python verify_offline.py` to repeat the combined checks. They do not move a robot.
 
 ### Real hardware (supervised only)
 

@@ -1,0 +1,5 @@
+# Offline self-tests: standard library only (Python 3.10+).
+# Optional hardware vision packages; install Picamera2 via supported Raspberry Pi OS packages.
+numpy
+opencv-python
+# PiDog/Robot HAT/Vilib: vendor installation; missing historical Buddy modules are listed in README.

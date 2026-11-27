@@ -14,10 +14,14 @@ I develop practical AI systems that connect perception, data analysis, machine l
 | [HealthLens AI — ITAI 2372](https://github.com/jtuozzo1616/HealthLens-AI-Explainable-Symptom-Analysis) | Explainable TF-IDF retrieval, abstention, safety rules | Fictional text only; 56 synthetic training examples and 26 evaluation cases; not clinical software |
 | [NewsBot midterm — ITAI 2373](ITAI2373-NewsBot-Midterm/README.md) | Text normalization, sentiment, NER, classification | 96.18% accuracy and 0.9605 macro-F1 on separate 288-article historical holdout |
 | [Computer vision — ITAI 1378](ComputerVision-ITAI1378/README.md) | CNNs, object detection, vision-language models | Runnable lab notebooks; dataset and compute requirements vary |
-| [House price regression](MachineLearning-Projects/README.md) | Regression, feature engineering, EDA | Notebook, housing CSV and analysis; see saved outputs |
+| [House price regression](MachineLearning-Projects/README.md) | Regression, feature engineering, EDA | Executed preprocessing notebook and housing CSV; model metrics not independently reproduced |
 | [Data analysis foundations](Cybersecurity/README.md) | Pandas, Matplotlib, Seaborn | Python script and visualization notebooks |
 
 ## Robotics: from physical control to intelligent assistance
+
+![Robotics troubleshooting pipeline](ITAI2377-RoboGuide/docs/figures/00_architecture.png)
+
+**Physical robotics review:** [Buddy voice and vision experiments](ITAI2374-PiDog/buddy/README.md) · [Historical terminal evidence](ITAI2374-PiDog/evidence/TERMINAL_OBSERVATIONS.md) · [Course coverage](ITAI2374-PiDog/COURSE_COVERAGE.md) · [Notebook reproducibility audit](docs/PORTFOLIO_VERIFICATION.md).
 
 - **PiDog:** physical servo control, sequential actions, range/touch sensing, camera-marker navigation and sound-direction cues. [Source and test instructions](ITAI2374-PiDog/README.md).
 - **RoboGuide:** separate software assistant that retrieves manufacturer guidance with version-aware safeguards. It does not control the robot. [Colab notebook](ITAI2377-RoboGuide/notebooks/RoboGuide_Colab.ipynb) · [Metrics](ITAI2377-RoboGuide/results/metrics.json) · [Architecture](ITAI2377-RoboGuide/docs/figures/00_architecture.png).
@@ -39,7 +43,7 @@ I develop practical AI systems that connect perception, data analysis, machine l
 
 ## Reproduce and review
 
-Each featured project links to its own README, source and available results. Follow the project-specific dependency instructions rather than installing a single global environment. Hardware projects require the appropriate calibrated Raspberry Pi / PiDog setup; offline logic tests do not establish real-world safety. For notebooks, use a clean Colab or Jupyter runtime and follow the data access instructions. Some older notebook environments may need version adjustments.
+Each featured project links to its own README, source and available results. Follow the project-specific dependency instructions rather than installing a single global environment. Hardware projects require the appropriate calibrated Raspberry Pi / PiDog setup; offline logic tests do not establish real-world safety. For notebooks, use a clean Colab or Jupyter runtime and follow the data access instructions. Some older notebook environments may need version adjustments. See the [verification matrix](docs/PORTFOLIO_VERIFICATION.md) for what was and was not independently checked.
 
 ## Skills and technologies
 

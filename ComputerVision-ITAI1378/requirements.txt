@@ -1,0 +1,12 @@
+numpy
+matplotlib
+seaborn
+opencv-python
+tensorflow
+tensorflow-hub
+torch
+torchvision
+transformers
+Pillow
+jupyter
+# Starting dependencies; old notebook-specific versions and datasets may vary.

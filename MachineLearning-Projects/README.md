@@ -1,75 +1,19 @@
+# House Prices Regression — Machine Learning coursework
 
----
+## Problem and approach
 
+Explore housing features and prepare data for regression using cleaning, encoding, scaling and exploratory plots. The existing notebook is an executed preprocessing artifact, not a complete independently verified model-training pipeline.
 
-# 📉 House Prices Regression – Machine Learning Project
+## Code, data and results
 
-## Overview
+- [Preprocessing notebook](MidTerm_Group3.ipynb) — 11 executed code cells with no saved error outputs; final saved dataframe shape is 21,609 rows × 17 columns.
+- [Housing CSV](Raw_Housing_Prices3.csv) — input already present in this directory.
+- [Detailed analysis](Midterm_Detailed_Analysis.docx) — accompanying academic document.
 
-This machine learning project predicts housing prices using numerical and categorical features. Multiple regression models were trained and compared to evaluate which approach best fits the dataset and produces the most accurate predictions.
+## Run
 
-## Objectives
+Install `python -m pip install -r requirements.txt`. In Google Colab, upload Raw_Housing_Prices3.csv to /content/ and run the notebook in order. In local Jupyter, change the first CSV path from /content/Raw_Housing_Prices3.csv to Raw_Housing_Prices3.csv and run from this directory. Do not treat preprocessing artifacts as independently verified regression performance.
 
-- Build end-to-end regression models for price prediction  
-- Practice data preprocessing, encoding, and feature selection  
-- Compare performance across different ML algorithms  
-- Understand evaluation metrics used in predictive modeling  
+## Learning and next steps
 
-## Technologies Used
-
-- Python
-- Jupyter Notebook / Google Colab
-- Pandas, NumPy
-- Scikit-Learn (Linear Regression, Decision Tree, Random Forest, Gradient Boosting, etc.)
-- Matplotlib / Seaborn
-
-## How to Run
-
-1. Open the notebook in Google Colab or Jupyter Notebook.
-2. Install required libraries (if needed):
-
-   !pip install scikit-learn pandas numpy matplotlib seaborn
-
-
-4. Run all cells in order.
-
-5. Review model metrics, plots, and analysis outputs.
-
-## Results 
-
-    Compared MAE, MSE, RMSE, and R² across multiple regression models
-
-    Identified the best-performing regressor using validation data
-
-    Visualized prediction errors and feature impacts through plots and summary statistics
-
-    (Optional to add, if quieres)
-    The best model achieved an R² of approximately X.XX on the validation set, with a relatively low MAE and stable error distribution.
-
-## Key Learnings
-
-    Differences between linear and non-linear regression models
-
-    How to evaluate and select models based on statistical metrics
-
-    Importance of preprocessing and feature engineering for ML performance
-
-## My Role in This Machine Learning Project
-
-In the House Prices Regression project, I was responsible for:
-
-    - Designing and implementing the full machine learning workflow notebook
-
-   -  Cleaning, filtering, and preparing the housing dataset features
-
-    - Performing exploratory data analysis (EDA) to understand correlations and trends
-
-    - Training and comparing multiple regression models using scikit-learn
-
-    - Evaluating performance using MAE, MSE, RMSE, and R²
-
-    - Visualizing model outputs, prediction errors, and feature importance
-
-    - Writing a technical analysis explaining results, trade-offs, and model selection decisions
-
-  ## Note: The dataset used in this project is referenced in the notebook. Dataset source, loading method, and preprocessing steps are documented directly inside the notebook and not uploaded as raw files to this repository.
+The notebook illustrates data cleaning, feature preparation and visualization. For a future validated model, split before fitting preprocessing, exclude IDs and leakage features, compare regression baselines on the same holdout, and record MAE/RMSE/R² from fresh execution. The earlier README's X.XX metric placeholder has been removed; no unsupported score is claimed.
