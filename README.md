@@ -1,127 +1,56 @@
-# José Tuozzo – Applied AI Portfolio
+# José Tuozzo | Applied AI & Robotics Portfolio
 
-## About Me
-I am a student in the Applied Artificial Intelligence program at Houston Community College, focusing on computer vision, machine learning, and foundational data science. My work combines practical implementation with hands-on experimentation across AI models, visual recognition systems, and analytical tools used in real-world data pipelines.  
-This portfolio highlights the core projects completed throughout my AI coursework, including deep learning, object detection, and data analysis fundamentals.
+**Houston Community College · Applied Artificial Intelligence · Academic project portfolio**
 
-## Portfolio Overview
+I develop practical AI systems that connect perception, data analysis, machine learning and human-centered interaction. My focus is on reproducible experiments, interpretable decisions, responsible deployment and integration with physical robotic platforms.
 
-This portfolio includes five main sections, including a complete natural-language-processing midterm:
+## Featured projects
 
----
+| Project | Focus | Evidence / scope |
+|---|---|---|
+| [PiDog robotics — ITAI 2374](ITAI2374-PiDog/README.md) | Python, quadruped motion, sensor fusion, SSH | Recovered course source code, hardware-independent tests, documented physical observations; integration requires supervised hardware validation |
+| [RoboGuide AI — ITAI 2377](ITAI2377-RoboGuide/README.md) | Evidence-grounded robotics troubleshooting | Development MRR@5 0.7742 → 0.8387; 8-question test slice tied at 1.000; exploratory 43-query benchmark |
+| [NewsBot 2.0 — ITAI 2373](ITAI2373-NewsBot-Final/README.md) | NLP, multilingual retrieval, topic modeling, Streamlit | 90.8% accuracy and 0.9079 macro-F1 on 250 historical BBC articles (3-fold CV); 38 tests in latest canonical CI |
+| [HealthLens AI — ITAI 2372](https://github.com/jtuozzo1616/HealthLens-AI-Explainable-Symptom-Analysis) | Explainable TF-IDF retrieval, abstention, safety rules | Fictional text only; 56 synthetic training examples and 26 evaluation cases; not clinical software |
+| [NewsBot midterm — ITAI 2373](ITAI2373-NewsBot-Midterm/README.md) | Text normalization, sentiment, NER, classification | 96.18% accuracy and 0.9605 macro-F1 on separate 288-article historical holdout |
+| [Computer vision — ITAI 1378](ComputerVision-ITAI1378/README.md) | CNNs, object detection, vision-language models | Runnable lab notebooks; dataset and compute requirements vary |
+| [House price regression](MachineLearning-Projects/README.md) | Regression, feature engineering, EDA | Notebook, housing CSV and analysis; see saved outputs |
+| [Data analysis foundations](Cybersecurity/README.md) | Pandas, Matplotlib, Seaborn | Python script and visualization notebooks |
 
-### 📰 Natural Language Processing — ITAI 2373
+## Robotics: from physical control to intelligent assistance
 
-**[NewsBot Intelligence System 2.0 — Final](ITAI2373-NewsBot-Final/README.md)**
+- **PiDog:** physical servo control, sequential actions, range/touch sensing, camera-marker navigation and sound-direction cues. [Source and test instructions](ITAI2374-PiDog/README.md).
+- **RoboGuide:** separate software assistant that retrieves manufacturer guidance with version-aware safeguards. It does not control the robot. [Colab notebook](ITAI2377-RoboGuide/notebooks/RoboGuide_Colab.ipynb) · [Metrics](ITAI2377-RoboGuide/results/metrics.json) · [Architecture](ITAI2377-RoboGuide/docs/figures/00_architecture.png).
 
-Capstone: LDA/NMF, clustering, source-grounded conversational NLP, multilingual embeddings and translation, reproducible historical evaluation, Streamlit and technical/business deliverables. [Canonical repository](https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System) · [Detailed rubric](https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System/blob/main/final-newsbot-2.0/docs/CANVAS_VERIFICATION.md).
+## NLP: research and working applications
 
-**[NewsBot Intelligence System — Midterm](ITAI2373-NewsBot-Midterm/README.md)**
+- **NewsBot final:** [canonical repository](https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System) · [executed master notebook](ITAI2373-NewsBot-Final/evidence/NewsBot_JoseT_2_0_Master_Colab.ipynb) · [live application](https://final-jose-group-newsbot-intelligence-system-al984gd7vc9uzqmek.streamlit.app/) · [evaluation evidence](ITAI2373-NewsBot-Final/evidence/README.md).
+- **NewsBot midterm:** [notebook](ITAI2373-NewsBot-Midterm/Midterm_NewsBot_Intelligence_System.ipynb) · [technical results](ITAI2373-NewsBot-Midterm/docs/Technical_Results_Summary.md). Historical midterm and final measurements use different evaluation designs and are not directly comparable.
+- **HealthLens:** [source, setup, tests and data](https://github.com/jtuozzo1616/HealthLens-AI-Explainable-Symptom-Analysis). Educational safety-conscious language classification; not for medical decisions.
 
-A complete eight-module historical news NLP project with text normalization, TF-IDF, POS/dependency syntax, VADER sentiment, named entities, and multiclass classification. The portfolio folder contains the runnable notebook, code, reproducibility files, **eight generated figures**, **seven-page technical PDF**, and a **two-page reflective journal draft**. A real BBC evaluation of 288 holdout articles achieved **96.18% accuracy** and **0.9605 macro-F1** using a tuned Linear SVM. The results describe historical BBC coverage only; the reflection requires the student's firsthand review.
+## Computer vision and ML notebooks
 
-- [Open the course notebook](ITAI2373-NewsBot-Midterm/Midterm_NewsBot_Intelligence_System.ipynb)
-- [Read the data-grounded technical findings](ITAI2373-NewsBot-Midterm/docs/Technical_Results_Summary.md)
-- [View academic technical report PDF](ITAI2373-NewsBot-Midterm/docs/MT_Report_Group_Solo_Jose_Miguel_Tuozzo_Izaguirre_ITAI2373.pdf)
-- [Inspect full canonical implementation and successful tests](https://github.com/jtuozzo1616/Final-Jose-Group-NewsBot-Intelligence-System/blob/main/MIDTERM.md)
+- [Chihuahua vs. Muffin CNN](ComputerVision-ITAI1378/Lab05_CNN_Chihuahua_Muffin_JoseTuozzo.ipynb)
+- [Pascal VOC object detection](ComputerVision-ITAI1378/Lab06_Orig_ITAI_1378_VOC2007__Dataset_JoseTuozzo_Notebook_LAB_Object_Detection_transfer_learning%282%29_fixed.ipynb)
+- [CLIP / BLIP vision-language lab](ComputerVision-ITAI1378/Lab_08_2025_VLM_Lab_JoseTuozzo%281%29_fixed.ipynb)
+- [Waste classification experiment](https://github.com/jtuozzo1616/Waste_Classification) — EfficientNet-B0 and Grad-CAM notebook; performance targets are not verified test results.
+- [Housing regression notebook](MachineLearning-Projects/MidTerm_Group3.ipynb)
+- [Pandas exercise](Cybersecurity/Jose_Tuozzo_Pandas101%281%29.py) · [Matplotlib](Cybersecurity/MatPlotLib_JoseTuozzo.ipynb) · [Seaborn](Cybersecurity/Seaborn_JoseTuozzoIzaguirre.ipynb)
 
----
+## Reproduce and review
 
-### 🔵 Computer Vision — ITAI 1378
-- **Lab 05 – CNN Classifier: Chihuahua vs Muffin**  
-  📄 Notebook:  
-  `./ComputerVision-ITAI1378/Lab05_CNN_Chihuahua_Muffin_...`
-- **Lab 08 – Visual Language Models (CLIP / BLIP / BLIP-2)**  
-  📄 Notebook:  
-  `./ComputerVision-ITAI1378/Lab_08_2025_VLM_Lab_JoseTuozzo.ipynb`
-- **Object Detection – Pascal VOC (Transfer Learning)**  
-  📄 Notebook:  
-  `./ComputerVision-ITAI1378/Lab06_Orig_ITAI_1378_VOC2007__Dataset_JoseTuozzo_Notebook_LAB_Object_Detection_transfer_learning.ipynb`
+Each featured project links to its own README, source and available results. Follow the project-specific dependency instructions rather than installing a single global environment. Hardware projects require the appropriate calibrated Raspberry Pi / PiDog setup; offline logic tests do not establish real-world safety. For notebooks, use a clean Colab or Jupyter runtime and follow the data access instructions. Some older notebook environments may need version adjustments.
 
----
+## Skills and technologies
 
-### 🟢 Machine Learning — House Prices Regression
-- **Midterm Regression Model**  
-  📄 Notebook:  
-  `./MachineLearning-Projects/MidTerm_Group3.ipynb`  
-  📑 Full Analysis:  
-  `./MachineLearning-Projects/Midterm_Detailed_Analysis.docx`
+Python · Raspberry Pi · PiDog / Robot HAT · SSH · sensor fusion · OpenCV · PyTorch · TensorFlow · scikit-learn · Pandas · NumPy · NLP · TF-IDF · computer vision · Grad-CAM · Jupyter / Colab · Gradio · Streamlit · GitHub Actions · evaluation and technical documentation.
 
----
+## Academic ownership and limitations
 
-### 🛡 Cybersecurity Data Analysis
-Foundational data science labs using Pandas, Matplotlib, and Seaborn.
-
-- **Pandas 101 — Data Cleaning & Exploration**  
-  `./Cybersecurity/Jose_Tuozzo_Pandas101(1).py`
-- **Matplotlib 101 — Visualization Basics**  
-  `./Cybersecurity/MatPlotLib_JoseTuozzo.ipynb`
-- **Seaborn 101 — Statistical Visualizations**  
-  `./Cybersecurity/Seaborn_JoseTuozzoIzaguirre.ipynb`
-
----
-
-## Technical Skills
-- **Programming & Tools:** Python, Jupyter Notebook, Google Colab, GitHub Actions, Streamlit  
-- **Machine Learning:** Regression and text classification, cross-validation, TF-IDF, scikit-learn pipelines, holdout testing, evaluation metrics (MAE, MSE, R², accuracy, macro-F1)  
-- **Deep Learning:** Convolutional Neural Networks (CNNs), transfer learning, image classification, object detection  
-- **Computer Vision:** OpenCV, preprocessing pipelines, bounding box visualization, TensorFlow Hub models  
-- **Data Analysis Foundations:**  
-  - **Pandas:** data cleaning, merging, filtering, grouping  
-  - **Matplotlib:** basic charting, visual trends  
-  - **Seaborn:** statistical visualizations, correlation analysis  
-
----
-
-## Featured Sections
-
-### 📰 Natural Language Processing — NewsBot
-Applied all eight foundational NLP modules to a single reproducible pipeline, compared four classification baselines and reported class-level holdout metrics. [Complete submission folder](ITAI2373-NewsBot-Midterm/README.md).
-
-
-### 🔵 Computer Vision (ITAI 1378)
-Hands-on labs applying CNNs, VLMs, and object detection frameworks.
-
-- **Lab 05 — CNN Classifier: Chihuahua vs Muffin**  
-  Implemented convolutional architectures to classify visually similar categories, comparing performance against traditional neural networks.
-
-- **Lab 08 — Visual Language Models (CLIP / BLIP / BLIP-2)**  
-  Explored multimodal AI through zero-shot classification, caption generation, VQA, and embedding similarity.
-
-- **Pascal VOC Object Detection (Transfer Learning)**  
-  Applied SSD MobileNet with TensorFlow Hub to detect objects and evaluate before/after inference results.
-
----
-
-### 🟢 Machine Learning (ML Midterm)
-- **House Prices Regression Project**  
-  Built and evaluated multiple regression models to predict home prices. Compared Linear Regression, Decision Trees, Random Forests, and Gradient Boosting, using MAE, MSE, and R² for model selection.
-
----
-
-### 🛡 Cybersecurity – Data Analysis Foundations
-Introductory notebooks demonstrating essential data analysis skills through the lens of cybersecurity data:
-
-- **Pandas 101:** loading datasets, cleaning, filtering, grouping, summarizing  
-- **Matplotlib 101:** visual patterns, bar/line/scatter plots  
-- **Seaborn 101:** heatmaps, distribution analysis, pairplots  
-
-These exercises establish the analytical foundation required for future threat-detection and anomaly-analysis workflows.
-
----
+This portfolio includes individual exercises and group projects. Group results belong to the relevant teams; consult their contribution records for individual responsibilities. Manufacturer examples are attributed to SunFounder. Reported scores are scoped to their recorded datasets; simulations and software-only tests do not imply field validation. Next steps include collecting repeatable physical robot trials, broader independent evaluation, and improving reproducibility of older labs.
 
 ## Contact
-- **Email:** jmtuozzoi@gmail.com  
-- **LinkedIn:** https://www.linkedin.com/in/jos%C3%A9-tuozzo-a018762a  
 
----
-
-### 🤖 Robotics AI — RoboGuide (ITAI 2377)
-
-**[RoboGuide AI: Evidence-Grounded PiDog Troubleshooting](ITAI2377-RoboGuide/README.md)** — source-attributed technical-support prototype with 8 engineered retrieval features, version-aware hardware safeguards, CPU-only operation, reproducible benchmark/ablation analysis, Gradio UI, **19 passing tests**, an executed Colab notebook, five visualizations and a 14-page technical report.
-
-- [Full source and reproducibility guide](ITAI2377-RoboGuide/README.md)
-- [Google Colab notebook](ITAI2377-RoboGuide/notebooks/RoboGuide_Colab.ipynb)
-- [Academic report PDF](ITAI2377-RoboGuide/FN_JoseTuozzo_TungTungTungSahar_ITAI2377.pdf)
-
-**Measured scope:** 24 curated official-source summaries; 43 manually authored queries; development MRR@5 improves 0.774 → 0.839, while the eight-question test slice is tied at 1.000. Results are exploratory, not external validation. Team contributions require individual confirmation.
+- [GitHub](https://github.com/jtuozzo1616)
+- [LinkedIn](https://www.linkedin.com/in/jos%C3%A9-tuozzo-a018762a)
+- Email: jmtuozzoi@gmail.com

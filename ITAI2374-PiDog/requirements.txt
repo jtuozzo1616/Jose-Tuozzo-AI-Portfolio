@@ -1,0 +1,2 @@
+# Offline tests: Python 3.10+ standard library only.
+# Hardware: install PiDog and Vilib following the manufacturer setup in README.md.
