@@ -1,0 +1,26 @@
+name: Portfolio robotics checks
+on:
+  push:
+    paths:
+      - 'ITAI2374-PiDog/**'
+      - '.github/workflows/portfolio-robotics-ci.yml'
+  pull_request:
+    paths:
+      - 'ITAI2374-PiDog/**'
+      - '.github/workflows/portfolio-robotics-ci.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-robotics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify recovered robotics source and offline behavior
+        run: python ITAI2374-PiDog/verify_offline.py
